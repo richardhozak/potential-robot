@@ -1,0 +1,6 @@
+C2013a ConsumerSecretService
+C2018b CsfdApiUrlHelper
+api_consumer_key =    061025241049
+api_consumer_secret = 88af9526ee967179
+schema cmd:
+"C:\Users\RHoza\Documents\csfdapp\repo\dumpargs.cmd" "%1"

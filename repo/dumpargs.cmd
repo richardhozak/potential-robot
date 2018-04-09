@@ -1,0 +1,1 @@
+echo %* > C:\\Users\\RHoza\\Documents\\csfdapp\\repo\\file.txt

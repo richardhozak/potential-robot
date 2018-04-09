@@ -1,0 +1,2 @@
+rust oauth1 probably does not generate proper signature
+query gets encoded two times (maybe we just need to remove encode(query) and just put query there)

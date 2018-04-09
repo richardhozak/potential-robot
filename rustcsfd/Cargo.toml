@@ -1,0 +1,15 @@
+[package]
+name = "rustcsfd"
+version = "0.1.0"
+authors = ["zxey <zxey@users.noreply.github.com>"]
+
+[dependencies]
+reqwest = "0.8"
+oauth1 = "0.3"
+url = "1.7"
+web-view = "0.1"
+kernel32-sys = "*"
+winapi = "*"
+
+[patch.crates-io]
+oauth1 = { path = "../oauth1-rs" }
