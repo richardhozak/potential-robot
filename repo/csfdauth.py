@@ -33,20 +33,29 @@ if __name__ == "__main__":
         authorize_url='https://android-api.csfd.cz/oauth/authorize',
         base_url='https://android-api.csfd.cz/')
 
+    print("------REQUEST TOKEN-------")
+
     request_token, request_token_secret = csfd.get_request_token(method="POST")
-    print(request_token, request_token_secret)
+    #print(request_token, request_token_secret)
+
+    print("------GET AUTHORIZE URL-------")
 
     authorize_url = csfd.get_authorize_url(request_token, oauth_callback="csfdroid://oauth-callback")
-    print("authorize url", authorize_url)
+    #print("authorize url", authorize_url)
     
     os.system("minimal \"{}\" \"{}\"".format("CSFD Auth", authorize_url))
 
-    auth_verifier = input("Enter: ")
+    #auth_verifier = input("Enter: ")
 
-    print(auth_verifier)
+    #print(auth_verifier)
 
-    session = csfd.get_auth_session(request_token,
-                                    request_token_secret,
-                                    method='POST') #data={'oauasdth_verifiera': auth_verifier}
+    print("------GET ACCESS TOKEN-------")
+    access_token, access_token_secret = csfd.get_access_token(request_token, request_token_secret, method="POST")
+
+    print("------GET SESSION-------")
+
+    session = csfd.get_session((access_token, access_token_secret))
+
+    print("------GET IDENTITY-------")
 
     print("identity", session.get('identity').json())

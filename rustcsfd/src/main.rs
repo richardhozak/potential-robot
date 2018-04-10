@@ -7,6 +7,8 @@ extern crate web_view;
 extern crate kernel32;
 extern crate winapi;
 
+use web_view::Content;
+
 use oauth1::Token;
 use reqwest::Client;
 use reqwest::Proxy;
@@ -30,12 +32,12 @@ const AUTHORIZE_URL: &str = "https://android-api.csfd.cz/oauth/authorize";
 const BASE_URL: &str = "https://android-api.csfd.cz/";
 
 fn get_request_token<'a>(client: &Client, request_token_url: &str, consumer_token: &Token<'a>) -> Option<Token<'a>> {
-    let mut res = client.get(REQUEST_TOKEN_URL)
+    let mut res = client.get(request_token_url)
                     .header(
                         Authorization(
                             oauth1::authorize(
                                 "GET",
-                                REQUEST_TOKEN_URL,
+                                request_token_url,
                                 &consumer_token,
                                 None,
                                 None,
@@ -59,12 +61,60 @@ fn get_request_token<'a>(client: &Client, request_token_url: &str, consumer_toke
     }
 }
 
+fn get_access_token<'a>(client: &Client, access_token_url: &str, consumer_token: &Token<'a>, request_token: &Token<'a>) -> Option<Token<'a>> {
+    let mut res = client.post(access_token_url)
+        .header(
+            Authorization(
+            oauth1::authorize(
+                "POST",
+                access_token_url,
+                &consumer_token,
+                Some(&request_token),
+                None,
+                oauth1::Mode::Header,
+            ))
+        )
+        .send()
+        .expect("could not retrieve acces token");
+
+    let text = res.text().unwrap();
+    let text = form_urlencoded::parse(text.as_bytes());
+    let pairs: HashMap<_,_> = text.into_owned().collect();
+
+    if pairs.contains_key("oauth_token") && pairs.contains_key("oauth_token_secret") {
+        let token = pairs.get("oauth_token").unwrap().clone();
+        let secret = pairs.get("oauth_token_secret").unwrap().clone();
+        Some(Token::new(token, secret))
+    } else {
+        None
+    }
+}
+
 fn get_authorize_url(url: &str, token: &str, callback: &str) -> String {
     let mut serializer = form_urlencoded::Serializer::new(String::new());
     serializer.append_pair("oauth_token", token);
     serializer.append_pair("oauth_callback", callback);
     let params = serializer.finish();
     format!("{}?{}", url, params)
+}
+
+fn get_resource<'a>(client: &Client, base_url: &str, resource: &str, consumer_token: &Token<'a>, access_token: &Token<'a>) -> String {
+    let url = format!("{}{}", base_url, resource);
+    let mut res = client.get(&url)
+                    .header(
+                        Authorization(
+                            oauth1::authorize(
+                                "GET",
+                                &url,
+                                &consumer_token,
+                                Some(&access_token),
+                                None,
+                                oauth1::Mode::Header,
+                            )
+                        )
+                    ).send().expect("could not get resource");
+
+    res.text().unwrap_or(String::new())
 }
 
 fn get_verifier_file_path() -> PathBuf {
@@ -128,35 +178,6 @@ fn read_verifier_file() -> Option<String> {
     pairs.get("oauth_verifier").cloned()
 }
 
-fn get_access_token<'a>(client: &Client, access_token_url: &str, consumer_token: &Token<'a>, request_token: &Token<'a>, verifier: &'a str) -> Option<Token<'a>> {
-    // let mut params: HashMap<&'static str, Cow<'a, str>> = HashMap::new();
-    // params.insert("oauth_verifier", verifier.clone().into());
-
-    let mut form = HashMap::new();
-    form.insert("oauth_verifier", verifier.into());
-
-    let dummy_form = [("", "")];
-
-    let res = client.post(access_token_url)
-                    .header(
-                        Authorization(
-                        oauth1::authorize(
-                            "POST",
-                            REQUEST_TOKEN_URL,
-                            &consumer_token,
-                            Some(&request_token),
-                            Some(form),
-                            oauth1::Mode::Header,
-                        ))
-                    )
-                    .send()
-                    .expect("could not retrieve acces token");
-
-    println!("result {:?}", res);
-    
-    None
-}
-
 fn main() {
     if env::args().count() == 2 {
         let text = env::args().skip(1).next().unwrap();
@@ -186,11 +207,14 @@ fn main() {
     if let Some(req_token) = get_request_token(&client, REQUEST_TOKEN_URL, &consumer_token) {
         let auth_url = get_authorize_url(AUTHORIZE_URL, &req_token.key, "csfdroid://oauth-callback");
         println!("authorize url {}", auth_url);
-        web_view::run("CSFD Auth", &auth_url, Some((800, 600)), true, true, |_|{}, |_,_,_|{}, ());
+        web_view::run("CSFD Auth", Content::Url(&auth_url), Some((800, 600)), true, true, |_|{}, |_,_,_|{}, ());
         if let Some(verifier) = read_verifier_file() {
             println!("verifier {:?}", verifier);
-            let access_token = get_access_token(&client, ACCESS_TOKEN_URL, &consumer_token, &req_token, &verifier);
-            println!("access token {:?}", access_token);
+            if let Some(access_token) =get_access_token(&client, ACCESS_TOKEN_URL, &consumer_token, &req_token) {
+                println!("access token {:?}", access_token);
+                let identity = get_resource(&client, BASE_URL, "identity", &consumer_token, &access_token);
+                println!("identity {}", identity);
+            }
         }
     }
 }

@@ -1,0 +1,23 @@
+sudo: required
+language: rust
+cache: cargo
+
+os:
+  - linux
+  - osx
+
+rust:
+  - stable
+  - beta
+  - nightly
+
+matrix:
+  allow_failures:
+    - rust: nightly
+
+addons:
+  apt:
+    packages:
+      - libwebkit2gtk-4.0-dev
+    sources:
+      - sourceline: 'ppa:webkit-team/ppa'
