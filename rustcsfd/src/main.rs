@@ -17,14 +17,12 @@ use reqwest::header::Authorization;
 use url::form_urlencoded;
 use url::Url;
 use std::collections::HashMap;
-use std::process::Command;
 use std::env;
 use std::path::PathBuf;
 use std::error::Error;
 use std::fs::File;
 use std::io::Write;
 use std::io::Read;
-use std::borrow::Cow;
 
 const REQUEST_TOKEN_URL: &str = "https://android-api.csfd.cz/oauth/request-token";
 const ACCESS_TOKEN_URL: &str = "https://android-api.csfd.cz/oauth/access-token";
@@ -130,9 +128,9 @@ fn get_verifier_file_path() -> PathBuf {
 
 fn write_verifier_file(text: String) {
     println!("writing {}", text);
-    
+
     let path = get_verifier_file_path();
-    
+
     let display = path.display();
     println!("{}", display);
 
@@ -171,12 +169,23 @@ fn read_verifier_file() -> Option<String> {
     file.read_to_string(&mut contents).expect(&format!("could not read {}", display));
     let url = match Url::parse(&contents) {
         Ok(url) => url,
-        Err(why) => return None,
+        Err(why) => panic!("could not parse {}: {}", display,
+                                                     why.description())
     };
 
     let pairs: HashMap<_, _> = url.query_pairs().into_owned().collect();
     pairs.get("oauth_verifier").cloned()
 }
+
+#[cfg(target_os = "windows")]
+fn attach_console() {
+    unsafe {
+        kernel32::AttachConsole(winapi::wincon::ATTACH_PARENT_PROCESS);
+    }
+}
+
+#[cfg(not(target_os = "windows"))]
+fn attach_console() { }
 
 fn main() {
     if env::args().count() == 2 {
@@ -185,14 +194,13 @@ fn main() {
         std::process::exit(0);
     }
 
-    unsafe {
-        kernel32::AttachConsole(winapi::wincon::ATTACH_PARENT_PROCESS);
-    }
+    attach_console();
 
     println!("started");
 
     let mut cert = Vec::new();
-    File::open("C:\\Users\\RHoza\\Documents\\csfdapp\\rustcsfd\\target\\debug\\charlescert.pem").unwrap().read_to_end(&mut cert).unwrap();
+    File::open("/home/richard/.mitmproxy/mitmproxy-ca.pem").unwrap().read_to_end(&mut cert).unwrap();
+    //File::open("C:\\Users\\RHoza\\Documents\\csfdapp\\rustcsfd\\target\\debug\\charlescert.pem").unwrap().read_to_end(&mut cert).unwrap();
 
     let cert = Certificate::from_pem(&cert).unwrap();
 
@@ -203,18 +211,18 @@ fn main() {
         .proxy(Proxy::all("http://127.0.0.1:8888").unwrap())
         .build()
         .unwrap();
-    
+
     if let Some(req_token) = get_request_token(&client, REQUEST_TOKEN_URL, &consumer_token) {
         let auth_url = get_authorize_url(AUTHORIZE_URL, &req_token.key, "csfdroid://oauth-callback");
         println!("authorize url {}", auth_url);
         web_view::run("CSFD Auth", Content::Url(&auth_url), Some((800, 600)), true, true, |_|{}, |_,_,_|{}, ());
-        if let Some(verifier) = read_verifier_file() {
-            println!("verifier {:?}", verifier);
-            if let Some(access_token) =get_access_token(&client, ACCESS_TOKEN_URL, &consumer_token, &req_token) {
+        //if let Some(verifier) = read_verifier_file() {
+            //println!("verifier {:?}", verifier);
+            if let Some(access_token) = get_access_token(&client, ACCESS_TOKEN_URL, &consumer_token, &req_token) {
                 println!("access token {:?}", access_token);
                 let identity = get_resource(&client, BASE_URL, "identity", &consumer_token, &access_token);
                 println!("identity {}", identity);
             }
-        }
+        //}
     }
 }
