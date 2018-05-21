@@ -767,7 +767,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3358a(int i, C1945a<Object> c1945a) {
         try {
-            String g = this.csfdApiUrlHelper.m6680g();
+            String g = this.csfdApiUrlHelper.url_cinemaFavorites();
             Map hashMap = new HashMap();
             hashMap.put("cinema_id", String.valueOf(i));
             Request request = new Request(g, C2522a.POST, hashMap, 4);
@@ -789,7 +789,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3388b(int i, C1945a<Object> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6693l(i), C2522a.DELETE, null, 4);
+            Request request = new Request(this.csfdApiUrlHelper.url_cinemaFavoritesFromCinemaId(i), C2522a.DELETE, null, 4);
             C2000b anonymousClass15 = new C2001b<Object>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4500a;
 
@@ -1163,7 +1163,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3404d(C1945a<C2025b> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6686i(), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_adAdMob(), 1);
             C2000b anonymousClass31 = new C2001b<C2025b>(this, c1945a, true) {
                 final /* synthetic */ CsfdApiDataProvider f4530a;
 
@@ -1210,7 +1210,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3382a(final Enum_ReleaseType c2283b, Date date, C1945a<List<MovieInfo>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6653a(c2283b, date), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_releasesFromReleaseTypeAndDate(c2283b, date), 1);
             C2000b anonymousClass33 = new C2001b<List<MovieInfo>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4533b;
 
@@ -1233,7 +1233,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3363a(C1945a<C2024a> c1945a, int i, int i2) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6646a(i, i2), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_adSplashWithWidthAndHeight(i, i2), 2);
             C2000b anonymousClass35 = new C2001b<C2024a>(this, c1945a, true) {
                 final /* synthetic */ CsfdApiDataProvider f4536a;
 
@@ -1257,7 +1257,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
     public C2011b mo3392b(C1945a<C2024a> c1945a, int i, int i2, String str, Map<String, String> map) {
         Log.d("CsfdApiDataProvider", "getAdBottom");
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6665b(i, i2, str, (Map) map), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_adBottomWithWidthAndHeightAndSectionAndParameters(i, i2, str, (Map) map), 2);
             C2000b anonymousClass36 = new C2001b<C2024a>(this, c1945a, true) {
                 final /* synthetic */ CsfdApiDataProvider f4537a;
 
@@ -1280,7 +1280,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3407e(C1945a<List<C2031h>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6683h(), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_videoTypes(), 1);
             C2000b anonymousClass37 = new C2001b<List<C2031h>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4538a;
 
@@ -1303,7 +1303,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3387b(int i, int i2, int i3, C1945a<List<MovieVideo>> c1945a, final Context context) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6682g(i3, i, i2), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_videoFromTypeWithOffsetAndLimit(i3, i, i2), 1);
             C2000b anonymousClass38 = new C2001b<List<MovieVideo>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4540b;
 
@@ -1326,7 +1326,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
     }
 
     public C2011b mo3391b(C1945a<List<MessageThread>> c1945a, int i, int i2) {
-        Request request = new Request(this.csfdApiUrlHelper.m6662b(i, i2), 2);
+        Request request = new Request(this.csfdApiUrlHelper.url_messagesWithLimitAndOffset(i, i2), 2);
         C2000b anonymousClass39 = new C2001b<List<MessageThread>>(this, c1945a) {
             final /* synthetic */ CsfdApiDataProvider f4541a;
 
@@ -1344,7 +1344,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
     }
 
     public C2011b mo3364a(C1945a<List<Message>> c1945a, int i, int i2, int i3) {
-        Request request = new Request(this.csfdApiUrlHelper.m6685h(i, i2, i3), 2);
+        Request request = new Request(this.csfdApiUrlHelper.url_messagesThreadWithUserIdAndLimitAndOffset(i, i2, i3), 2);
         C2000b anonymousClass40 = new C2001b<List<Message>>(this, c1945a) {
             final /* synthetic */ CsfdApiDataProvider f4544a;
 

@@ -308,14 +308,14 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6653a(Enum_ReleaseType c2283b, Date date) {
+    public String url_releasesFromReleaseTypeAndDate(Enum_ReleaseType c2283b, Date date) {
         String format = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH).format(date);
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("releases").append("/").append(c2283b.toString().toLowerCase()).append("?date=").append(format);
         return stringBuilder.toString();
     }
 
-    public String m6680g() {
+    public String url_cinemaFavorites() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("favorites");
         return stringBuilder.toString();
@@ -336,19 +336,20 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6693l(int i) {
+    // probably used for PUT and DELETE of cinemas from favorites
+    public String url_cinemaFavoritesFromCinemaId(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("favorites").append("?").append("cinema_id=").append(i);
         return stringBuilder.toString();
     }
 
-    public String m6683h() {
+    public String url_videoTypes() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("video").append("/").append("types");
         return stringBuilder.toString();
     }
 
-    public String m6682g(int i, int i2, int i3) {
+    public String url_videoFromTypeWithOffsetAndLimit(int i, int i2, int i3) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("video");
         stringBuilder.append("?");
@@ -360,19 +361,19 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6686i() {
+    public String url_adAdMob() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("ad").append("/").append("ad-mob");
         return stringBuilder.toString();
     }
 
-    public String m6646a(int i, int i2) {
+    public String url_adSplashWithWidthAndHeight(int i, int i2) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("ad").append("/").append("splash").append("?").append("width=").append(i).append("height=").append(i2);
         return stringBuilder.toString();
     }
 
-    public String m6665b(int i, int i2, String str, Map<String, String> map) {
+    public String url_adBottomWithWidthAndHeightAndSectionAndParameters(int i, int i2, String str, Map<String, String> map) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("ad").append("/").append("bottom").append("?").append("width=").append(i).append("&").append("height=").append(i2).append("&").append("section=").append(str);
         if (map != null && map.size() > 0) {
@@ -381,13 +382,13 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6662b(int i, int i2) {
+    public String url_messagesWithLimitAndOffset(int i, int i2) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("messages").append("?").append("limit=").append(i).append("&").append("offset=").append(i2);
         return stringBuilder.toString();
     }
 
-    public String m6685h(int i, int i2, int i3) {
+    public String url_messagesThreadWithUserIdAndLimitAndOffset(int i, int i2, int i3) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("messages").append("/").append("thread").append("?").append("user_id=").append(i).append("&").append("limit=").append(i2).append("&").append("offset=").append(i3);
         return stringBuilder.toString();
