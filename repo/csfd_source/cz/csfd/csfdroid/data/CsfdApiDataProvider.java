@@ -6,7 +6,7 @@ import android.util.Log;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.ActivityEntity;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
@@ -643,7 +643,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
         }
     }
 
-    public C2011b mo3360a(final Location location, int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a) {
+    public C2011b mo3360a(final Location location, int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a) {
         try {
             Request request = new Request(this.csfdApiUrlHelper.m6644a(location.getLatitude(), location.getLongitude(), i, !z, c2019c), 2);
             C2000b c20098 = new C2001b<List<Cinema>>(this, c1945a) {
@@ -667,7 +667,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
         }
     }
 
-    public C2011b mo3383a(String str, int i, boolean z, C2019c c2019c, C1945a<Map<String, List<Cinema>>> c1945a) {
+    public C2011b mo3383a(String str, int i, boolean z, Enum_TimeRange c2019c, C1945a<Map<String, List<Cinema>>> c1945a) {
         try {
             Request request = new Request(this.csfdApiUrlHelper.m6657a(str, i, !z, c2019c), 2);
             C2000b c20109 = new C2001b<Map<String, List<Cinema>>>(this, c1945a) {
@@ -691,7 +691,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
         }
     }
 
-    public C2011b mo3359a(int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a) {
+    public C2011b mo3359a(int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a) {
         try {
             Request request = new Request(this.csfdApiUrlHelper.m6651a(i, !z, c2019c), 2);
             C2000b anonymousClass10 = new C2001b<List<Cinema>>(this, c1945a) {

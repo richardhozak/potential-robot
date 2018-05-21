@@ -8,7 +8,7 @@ import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.C2063g;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
@@ -27,7 +27,7 @@ public class C2207i extends C2063g<List<Cinema>> implements C1973d {
     private C2197e f5366m;
     private int f5367n;
     private boolean f5368o;
-    private C2019c f5369p;
+    private Enum_TimeRange f5369p;
     private long f5370q;
     private C2086a f5371r;
     private List<C2083a> f5372s = new ArrayList();

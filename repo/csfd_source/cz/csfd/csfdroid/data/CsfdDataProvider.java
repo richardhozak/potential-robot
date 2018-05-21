@@ -46,7 +46,7 @@ public interface CsfdDataProvider {
     }
 
     /* compiled from: CsfdDataProvider */
-    public enum C2019c {
+    public enum Enum_TimeRange {
         TODAY(R.id.menu_item_date_today),
         TOMORROW(R.id.menu_item_date_tomorrow),
         WEEKEND(R.id.menu_item_date_weekend),
@@ -56,7 +56,7 @@ public interface CsfdDataProvider {
         
         private int f4616g;
 
-        private C2019c(int i) {
+        private Enum_TimeRange(int i) {
             this.f4616g = i;
         }
 
@@ -64,8 +64,8 @@ public interface CsfdDataProvider {
             return this.f4616g;
         }
 
-        public static C2019c m6697a(int i) {
-            for (C2019c c2019c : C2019c.values()) {
+        public static Enum_TimeRange m6697a(int i) {
+            for (Enum_TimeRange c2019c : Enum_TimeRange.values()) {
                 if (c2019c.m6698a() == i) {
                     return c2019c;
                 }
@@ -94,9 +94,9 @@ public interface CsfdDataProvider {
 
     C2011b mo3358a(int i, C1945a<Object> c1945a);
 
-    C2011b mo3359a(int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a);
+    C2011b mo3359a(int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a);
 
-    C2011b mo3360a(Location location, int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a);
+    C2011b mo3360a(Location location, int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a);
 
     C2011b mo3361a(C1945a<Identity> c1945a);
 
@@ -142,7 +142,7 @@ public interface CsfdDataProvider {
 
     C2011b mo3382a(Enum_ReleaseType c2283b, Date date, C1945a<List<MovieInfo>> c1945a);
 
-    C2011b mo3383a(String str, int i, boolean z, C2019c c2019c, C1945a<Map<String, List<Cinema>>> c1945a);
+    C2011b mo3383a(String str, int i, boolean z, Enum_TimeRange c2019c, C1945a<Map<String, List<Cinema>>> c1945a);
 
     C2011b mo3384a(String str, C1945a<Map<String, List<? extends BasicEntity>>> c1945a);
 

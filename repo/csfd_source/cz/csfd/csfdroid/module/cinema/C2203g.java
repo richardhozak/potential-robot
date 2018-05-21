@@ -20,7 +20,7 @@ import cz.csfd.csfdroid.C1974c;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.module.ads.AdBottomView;
 import cz.csfd.csfdroid.module.ads.C2147a.C2146b;
 import cz.csfd.csfdroid.p060c.C1970b;
@@ -156,7 +156,7 @@ public class C2203g extends C1974c {
             case R.id.menu_item_date_week:
             case R.id.menu_item_date_weekend:
                 menuItem.setChecked(true);
-                this.f5347b.m7180a(C2019c.m6697a(menuItem.getItemId()));
+                this.f5347b.m7180a(Enum_TimeRange.m6697a(menuItem.getItemId()));
                 return false;
             default:
                 return super.onOptionsItemSelected(menuItem);

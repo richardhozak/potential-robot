@@ -32,7 +32,7 @@ import com.google.android.gms.location.LocationServices;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
@@ -73,7 +73,7 @@ public class C2217k extends C2181d implements C1973d {
     private String f5404u;
     private C2216b f5405v;
     private int f5406w;
-    private C2019c f5407x;
+    private Enum_TimeRange f5407x;
     private boolean f5408y;
     private GoogleApiClient f5409z;
 

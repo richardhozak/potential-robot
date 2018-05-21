@@ -2,7 +2,7 @@ package cz.csfd.csfdroid.data;
 
 import android.text.TextUtils;
 import android.util.Base64;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
@@ -156,7 +156,7 @@ public class CsfdApiUrlHelper {
         return str2;
     }
 
-    public String m6644a(double d, double d2, int i, boolean z, C2019c c2019c) {
+    public String m6644a(double d, double d2, int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("nearest").append("?").append("latitude=").append(d).append("&").append("longitude=").append(d2);
         if (i > 0) {
@@ -171,7 +171,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6657a(String str, int i, boolean z, C2019c c2019c) {
+    public String m6657a(String str, int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("towns").append("?").append("name=").append(URLEncoder.encode(str, HTTP.UTF_8)).append("&with_cinemas=1");
@@ -321,7 +321,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6651a(int i, boolean z, C2019c c2019c) {
+    public String m6651a(int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("favorites");
         if (i > 0) {

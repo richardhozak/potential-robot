@@ -24,7 +24,7 @@ import android.widget.Toast;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
@@ -67,7 +67,7 @@ public class C2182a extends C2181d implements C1973d {
     private String f5286u;
     private C2179b f5287v;
     private int f5288w;
-    private C2019c f5289x;
+    private Enum_TimeRange f5289x;
     private boolean f5290y;
 
     /* compiled from: AllCinemaListFragment */

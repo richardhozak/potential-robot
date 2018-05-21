@@ -11,7 +11,7 @@ import android.support.v4.app.Fragment;
 import cz.csfd.csfdroid.data.CsfdDataProvider;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.data.store.C2034a.C2033a;
@@ -94,7 +94,7 @@ public class C2200f implements C2197e {
         throw new C2183b(uri.toString());
     }
 
-    public void mo3497a(Location location, int i, boolean z, C2019c c2019c, final C2196b c2196b, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
+    public void mo3497a(Location location, int i, boolean z, Enum_TimeRange c2019c, final C2196b c2196b, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
         if (c2196b != null) {
             c2196b.mo3489b();
         }
@@ -158,7 +158,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3499a(String str, int i, boolean z, C2019c c2019c, final C2178d c2178d, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
+    public void mo3499a(String str, int i, boolean z, Enum_TimeRange c2019c, final C2178d c2178d, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
         mo3505d();
         if (c2178d != null) {
             c2178d.mo3488b();
@@ -194,7 +194,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3494a(int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a, CsfdDataProvider c2016c) {
+    public void mo3494a(int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a, CsfdDataProvider c2016c) {
         mo3506e();
         this.f5341h = c2016c.mo3359a(i, z, c2019c, (C1945a) c1945a);
     }

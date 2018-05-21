@@ -9,7 +9,7 @@ import android.os.Build.VERSION;
 import android.preference.PreferenceManager;
 import com.google.android.gms.ads.AdSize;
 import com.h6ah4i.android.compat.p055a.C1792a;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_TimeRange;
 import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.C2024a;
 import cz.csfd.csfdroid.data.entity.C2025b;
@@ -193,11 +193,11 @@ public class C2057e {
         this.f4830e.edit().putBoolean("cinemas_without_schedule", z).commit();
     }
 
-    public C2019c m7212r() {
-        return C2019c.valueOf(this.f4830e.getString("cinemas_time_range", "ALL"));
+    public Enum_TimeRange m7212r() {
+        return Enum_TimeRange.valueOf(this.f4830e.getString("cinemas_time_range", "ALL"));
     }
 
-    public void m7180a(C2019c c2019c) {
+    public void m7180a(Enum_TimeRange c2019c) {
         this.f4830e.edit().putString("cinemas_time_range", c2019c.name()).commit();
     }
 
