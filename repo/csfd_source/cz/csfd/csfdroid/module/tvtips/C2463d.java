@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import cz.csfd.csfdroid.data.CsfdDataProvider;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.C2030g;
 import cz.csfd.csfdroid.data.entity.TvStation;
 import cz.csfd.csfdroid.module.home.DrawerFragment.C2254b;
@@ -35,7 +35,7 @@ public class C2463d implements C2462c {
         return uri.getPath().startsWith("/televize");
     }
 
-    public void mo3635a(C1945a<List<C2030g>> c1945a, CsfdDataProvider c2016c, long j, int i, C2020d c2020d) {
+    public void mo3635a(C1945a<List<C2030g>> c1945a, CsfdDataProvider c2016c, long j, int i, Enum_OrderBy c2020d) {
         this.f6167a = c2016c.mo3367a((C1945a) c1945a, j, i, c2020d);
         this.f6170d = j;
     }

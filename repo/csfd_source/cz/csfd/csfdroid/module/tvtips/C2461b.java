@@ -7,7 +7,7 @@ import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.C2063g;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.C2030g;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
@@ -27,7 +27,7 @@ public class C2461b extends C2063g<List<C2030g>> implements C1973d {
     private C2366h f6163n;
     private C2057e f6164o;
     private long f6165p;
-    private C2020d f6166q;
+    private Enum_OrderBy f6166q;
 
     public void onCreate(Bundle bundle) {
         this.a = false;

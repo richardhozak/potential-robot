@@ -14,7 +14,7 @@ import cz.csfd.csfdroid.C1974c;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.module.ads.AdBottomView;
 import cz.csfd.csfdroid.module.ads.C2147a.C2146b;
 import cz.csfd.csfdroid.p060c.C1973d;
@@ -121,21 +121,21 @@ public class C2468f extends C1974c {
     }
 
     public boolean onOptionsItemSelected(MenuItem menuItem) {
-        C2020d w = this.f6180c.m7216w();
+        Enum_OrderBy w = this.f6180c.m7216w();
         switch (menuItem.getItemId()) {
             case R.id.menu_item_sort_rating:
-                if (w == C2020d.RATING) {
+                if (w == Enum_OrderBy.RATING) {
                     return true;
                 }
-                this.f6180c.m7181a(C2020d.RATING);
+                this.f6180c.m7181a(Enum_OrderBy.RATING);
                 this.f6181d.notifyDataSetChanged();
                 menuItem.setChecked(true);
                 return true;
             case R.id.menu_item_sort_time:
-                if (w == C2020d.TIME) {
+                if (w == Enum_OrderBy.TIME) {
                     return true;
                 }
-                this.f6180c.m7181a(C2020d.TIME);
+                this.f6180c.m7181a(Enum_OrderBy.TIME);
                 this.f6181d.notifyDataSetChanged();
                 menuItem.setChecked(true);
                 return true;

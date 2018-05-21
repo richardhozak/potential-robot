@@ -10,7 +10,7 @@ import android.preference.PreferenceManager;
 import com.google.android.gms.ads.AdSize;
 import com.h6ah4i.android.compat.p055a.C1792a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.C2024a;
 import cz.csfd.csfdroid.data.entity.C2025b;
 import cz.csfd.csfdroid.data.entity.Chart;
@@ -270,11 +270,11 @@ public class C2057e {
         return arrayList;
     }
 
-    public C2020d m7216w() {
-        return C2020d.valueOf(this.f4830e.getString("tv_tips_order", "TIME"));
+    public Enum_OrderBy m7216w() {
+        return Enum_OrderBy.valueOf(this.f4830e.getString("tv_tips_order", "TIME"));
     }
 
-    public void m7181a(C2020d c2020d) {
+    public void m7181a(Enum_OrderBy c2020d) {
         this.f4830e.edit().putString("tv_tips_order", c2020d.name()).commit();
     }
 

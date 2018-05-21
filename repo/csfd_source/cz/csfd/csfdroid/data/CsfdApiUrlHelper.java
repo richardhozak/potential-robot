@@ -3,7 +3,7 @@ package cz.csfd.csfdroid.data;
 import android.text.TextUtils;
 import android.util.Base64;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.module.home.C2284d.C2283b;
 import cz.csfd.csfdroid.p061d.C1998s;
@@ -271,13 +271,13 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6652a(long j, int i, C2020d c2020d) {
+    public String url_tvTipsWithOffsetAndDateTimeStampWithOrder(long j, int i, Enum_OrderBy c2020d) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("tv/tips").append("/?").append("limit").append("=").append(20).append("&").append("offset").append("=").append(i).append("&").append("date").append("=").append(String.format(Locale.ENGLISH, "%tY-%<tm-%<td", new Object[]{Long.valueOf(j)})).append("&").append("orderBy").append("=").append(c2020d.m6699a());
         return stringBuilder.toString();
     }
 
-    public String m6658a(Date date, List<Integer> list, int i) {
+    public String url_tvScheduleWithDateAndStationsIdsListWithOffset(Date date, List<Integer> list, int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("tv/schedule").append("/?").append("limit").append("=").append(20).append("&").append("offset").append("=").append(i).append("&").append("date").append("=").append(String.format(Locale.ENGLISH, "%tY-%<tm-%<td", new Object[]{date}));
         if (list != null && list.size() > 0) {
@@ -286,7 +286,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6675e() {
+    public String url_tvStations() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("tv/stations");
         return stringBuilder.toString();

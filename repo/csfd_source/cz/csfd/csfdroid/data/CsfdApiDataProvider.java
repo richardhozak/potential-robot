@@ -7,7 +7,7 @@ import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
-import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.ActivityEntity;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.C2024a;
@@ -1060,9 +1060,9 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
         }
     }
 
-    public C2011b mo3367a(C1945a<List<C2030g>> c1945a, long j, int i, C2020d c2020d) {
+    public C2011b mo3367a(C1945a<List<C2030g>> c1945a, long j, int i, Enum_OrderBy c2020d) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6652a(j, i, c2020d), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_tvTipsWithOffsetAndDateTimeStampWithOrder(j, i, c2020d), 2);
             C2000b anonymousClass27 = new C2001b<List<C2030g>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4524a;
 
@@ -1085,7 +1085,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3400c(C1945a<List<TvStation>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6675e(), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_tvStations(), 2);
             C2000b anonymousClass28 = new C2001b<List<TvStation>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4525a;
 
@@ -1108,7 +1108,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3385a(List<TvStation> list, C1945a<Boolean> c1945a) {
         try {
-            String e = this.csfdApiUrlHelper.m6675e();
+            String e = this.csfdApiUrlHelper.url_tvStations();
             List arrayList = new ArrayList();
             for (TvStation tvStation : list) {
                 if (tvStation.m7069d()) {
@@ -1140,7 +1140,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3369a(C1945a<List<TvStation>> c1945a, Date date, List<Integer> list, int i, boolean z) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6658a(date, (List) list, i), z ? 2 : 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_tvScheduleWithDateAndStationsIdsListWithOffset(date, (List) list, i), z ? 2 : 1);
             C2000b anonymousClass30 = new C2001b<List<TvStation>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4529a;
 

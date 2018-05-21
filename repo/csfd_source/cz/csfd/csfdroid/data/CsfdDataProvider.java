@@ -75,13 +75,13 @@ public interface CsfdDataProvider {
     }
 
     /* compiled from: CsfdDataProvider */
-    public enum C2020d {
+    public enum Enum_OrderBy {
         TIME("time"),
         RATING("rating");
         
         private String f4620c;
 
-        private C2020d(String str) {
+        private Enum_OrderBy(String str) {
             this.f4620c = str;
         }
 
@@ -110,7 +110,7 @@ public interface CsfdDataProvider {
 
     C2011b mo3366a(C1945a<Message> c1945a, int i, String str);
 
-    C2011b mo3367a(C1945a<List<C2030g>> c1945a, long j, int i, C2020d c2020d);
+    C2011b mo3367a(C1945a<List<C2030g>> c1945a, long j, int i, Enum_OrderBy c2020d);
 
     C2011b mo3368a(C1945a<List<User>> c1945a, String str, int i);
 
