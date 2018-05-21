@@ -23,7 +23,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 import cz.csfd.csfdroid.C2063g;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.Message;
 import cz.csfd.csfdroid.data.entity.MessageThread;
 import cz.csfd.csfdroid.gd.widget.C2086a;

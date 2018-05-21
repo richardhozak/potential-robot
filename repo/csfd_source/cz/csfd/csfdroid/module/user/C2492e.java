@@ -13,9 +13,9 @@ import android.support.v4.app.Fragment;
 import cz.csfd.csfdroid.C1950a;
 import cz.csfd.csfdroid.C1950a.C1947a;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.module.user.C2489d.C2472a;
@@ -109,7 +109,7 @@ public class C2492e implements C2489d {
         return stringBuilder.toString();
     }
 
-    public void mo3657a(User user, C2487c c2487c, C2016c c2016c) {
+    public void mo3657a(User user, C2487c c2487c, CsfdDataProvider c2016c) {
         m9169b();
         if (c2487c != null) {
             c2487c.mo3417g();
@@ -124,7 +124,7 @@ public class C2492e implements C2489d {
         }
     }
 
-    public void mo3656a(User user, C2477b c2477b, C2016c c2016c) {
+    public void mo3656a(User user, C2477b c2477b, CsfdDataProvider c2016c) {
         mo3650a();
         if (c2477b != null) {
             c2477b.mo3417g();
@@ -139,7 +139,7 @@ public class C2492e implements C2489d {
         }
     }
 
-    public void mo3660b(User user, C2477b c2477b, C2016c c2016c) {
+    public void mo3660b(User user, C2477b c2477b, CsfdDataProvider c2016c) {
         m9174c();
         if (c2477b != null) {
             c2477b.mo3417g();
@@ -154,7 +154,7 @@ public class C2492e implements C2489d {
         }
     }
 
-    public void mo3655a(User user, Section section, C2472a c2472a, C2016c c2016c) {
+    public void mo3655a(User user, Section section, C2472a c2472a, CsfdDataProvider c2016c) {
         m9176d();
         if (c2472a != null) {
             c2472a.mo3417g();
@@ -169,11 +169,11 @@ public class C2492e implements C2489d {
         }
     }
 
-    public void mo3651a(int i, C1945a<Boolean> c1945a, C2016c c2016c) {
+    public void mo3651a(int i, C1945a<Boolean> c1945a, CsfdDataProvider c2016c) {
         c2016c.mo3401c((C1945a) c1945a, i);
     }
 
-    public void mo3659b(int i, C1945a<Boolean> c1945a, C2016c c2016c) {
+    public void mo3659b(int i, C1945a<Boolean> c1945a, CsfdDataProvider c2016c) {
         c2016c.mo3405d((C1945a) c1945a, i);
     }
 

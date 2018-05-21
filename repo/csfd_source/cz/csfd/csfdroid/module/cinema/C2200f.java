@@ -8,10 +8,10 @@ import android.location.Location;
 import android.net.Uri;
 import android.net.Uri.Builder;
 import android.support.v4.app.Fragment;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
-import cz.csfd.csfdroid.data.C2016c.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.data.store.C2034a.C2033a;
@@ -94,7 +94,7 @@ public class C2200f implements C2197e {
         throw new C2183b(uri.toString());
     }
 
-    public void mo3497a(Location location, int i, boolean z, C2019c c2019c, final C2196b c2196b, C2016c c2016c, final ContentResolver contentResolver) {
+    public void mo3497a(Location location, int i, boolean z, C2019c c2019c, final C2196b c2196b, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
         if (c2196b != null) {
             c2196b.mo3489b();
         }
@@ -127,7 +127,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3498a(Cinema cinema, C2194a c2194a, C2016c c2016c) {
+    public void mo3498a(Cinema cinema, C2194a c2194a, CsfdDataProvider c2016c) {
         mo3492a(this.f5342i);
         if (c2194a != null) {
             c2194a.mo3417g();
@@ -143,7 +143,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3500a(String str, C2176c c2176c, C2016c c2016c) {
+    public void mo3500a(String str, C2176c c2176c, CsfdDataProvider c2016c) {
         mo3504c();
         if (c2176c != null) {
             c2176c.mo3487b();
@@ -158,7 +158,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3499a(String str, int i, boolean z, C2019c c2019c, final C2178d c2178d, C2016c c2016c, final ContentResolver contentResolver) {
+    public void mo3499a(String str, int i, boolean z, C2019c c2019c, final C2178d c2178d, CsfdDataProvider c2016c, final ContentResolver contentResolver) {
         mo3505d();
         if (c2178d != null) {
             c2178d.mo3488b();
@@ -194,7 +194,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3494a(int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a, C2016c c2016c) {
+    public void mo3494a(int i, boolean z, C2019c c2019c, C1945a<List<Cinema>> c1945a, CsfdDataProvider c2016c) {
         mo3506e();
         this.f5341h = c2016c.mo3359a(i, z, c2019c, (C1945a) c1945a);
     }
@@ -206,7 +206,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3493a(int i, C1945a<Object> c1945a, C2016c c2016c) {
+    public void mo3493a(int i, C1945a<Object> c1945a, CsfdDataProvider c2016c) {
         m7907f();
         this.f5339f = c2016c.mo3358a(i, (C1945a) c1945a);
     }
@@ -218,7 +218,7 @@ public class C2200f implements C2197e {
         }
     }
 
-    public void mo3502b(int i, C1945a<Object> c1945a, C2016c c2016c) {
+    public void mo3502b(int i, C1945a<Object> c1945a, CsfdDataProvider c2016c) {
         m7908g();
         this.f5340g = c2016c.mo3388b(i, (C1945a) c1945a);
     }

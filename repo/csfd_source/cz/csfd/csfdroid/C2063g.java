@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.ListAdapter;
 import android.widget.TextView;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
 import cz.csfd.csfdroid.list.p063a.C2105m;
 import cz.csfd.csfdroid.list.p063a.C2105m.C2061a;

@@ -2,8 +2,8 @@ package cz.csfd.csfdroid.module.movie;
 
 import android.content.Context;
 import android.net.Uri;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.data.entity.MovieVideos;
 import cz.csfd.csfdroid.data.entity.Seasons;
@@ -92,11 +92,11 @@ public interface C2366h {
 
     void mo3571a(int i);
 
-    void mo3572a(int i, C1945a<Seasons> c1945a, C2016c c2016c);
+    void mo3572a(int i, C1945a<Seasons> c1945a, CsfdDataProvider c2016c);
 
-    void mo3573a(MovieInfo movieInfo, int i, C2249e c2249e, C2016c c2016c);
+    void mo3573a(MovieInfo movieInfo, int i, C2249e c2249e, CsfdDataProvider c2016c);
 
-    void mo3574a(MovieInfo movieInfo, int i, C2362g c2362g, C2016c c2016c, Context context);
+    void mo3574a(MovieInfo movieInfo, int i, C2362g c2362g, CsfdDataProvider c2016c, Context context);
 
     void mo3575a(MovieInfo movieInfo, Context context);
 
@@ -104,17 +104,17 @@ public interface C2366h {
 
     void mo3577a(MovieInfo movieInfo, MovieVideos movieVideos, int i, boolean z, Context context);
 
-    void mo3578a(MovieInfo movieInfo, C2327a c2327a, C2016c c2016c);
+    void mo3578a(MovieInfo movieInfo, C2327a c2327a, CsfdDataProvider c2016c);
 
-    void mo3579a(MovieInfo movieInfo, C2332b c2332b, C2016c c2016c);
+    void mo3579a(MovieInfo movieInfo, C2332b c2332b, CsfdDataProvider c2016c);
 
     void mo3580a(MovieInfo movieInfo, C2364c c2364c, Context context);
 
-    void mo3581a(MovieInfo movieInfo, C2361d c2361d, C2016c c2016c);
+    void mo3581a(MovieInfo movieInfo, C2361d c2361d, CsfdDataProvider c2016c);
 
-    void mo3582a(MovieInfo movieInfo, C2365f c2365f, C2016c c2016c);
+    void mo3582a(MovieInfo movieInfo, C2365f c2365f, CsfdDataProvider c2016c);
 
-    void mo3583a(MovieInfo movieInfo, C2318h c2318h, C2016c c2016c, boolean z, boolean z2);
+    void mo3583a(MovieInfo movieInfo, C2318h c2318h, CsfdDataProvider c2016c, boolean z, boolean z2);
 
     C2364c mo3584b(Uri uri);
 

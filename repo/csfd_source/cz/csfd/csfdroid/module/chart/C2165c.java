@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.Chart;
 import cz.csfd.csfdroid.module.chart.C2164b.C2161a;
 import cz.csfd.csfdroid.module.chart.C2164b.C2163b;
@@ -26,7 +26,7 @@ public class C2165c implements C2164b {
         return new C2170d();
     }
 
-    public void mo3482a(C2163b c2163b, C2016c c2016c) {
+    public void mo3482a(C2163b c2163b, CsfdDataProvider c2016c) {
         mo3483b();
         if (c2163b != null) {
             c2163b.f_();
@@ -41,7 +41,7 @@ public class C2165c implements C2164b {
         }
     }
 
-    public void mo3481a(Chart chart, C2161a c2161a, C2016c c2016c) {
+    public void mo3481a(Chart chart, C2161a c2161a, CsfdDataProvider c2016c) {
         if (c2161a != null) {
             c2161a.mo3417g();
         }

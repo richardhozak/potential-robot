@@ -22,7 +22,7 @@ import cz.csfd.csfdroid.C1950a.C1947a;
 import cz.csfd.csfdroid.C1999d;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.data.entity.CinemaMovie;

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import java.util.Date;
@@ -37,9 +37,9 @@ public interface C2284d {
 
     void mo3542a(FragmentActivity fragmentActivity);
 
-    void mo3543a(C1945a<List<MovieInfo>> c1945a, C2016c c2016c, C2283b c2283b, Date date);
+    void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, C2283b c2283b, Date date);
 
-    void mo3544a(List<String> list, C2281a c2281a, C2016c c2016c, Context context);
+    void mo3544a(List<String> list, C2281a c2281a, CsfdDataProvider c2016c, Context context);
 
     void mo3545b();
 }

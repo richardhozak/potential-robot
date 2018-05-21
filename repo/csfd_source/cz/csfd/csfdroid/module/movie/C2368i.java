@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.net.Uri.Builder;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.data.entity.MovieVideos;
@@ -76,7 +76,7 @@ public class C2368i implements C2366h {
         context.startActivity(intent);
     }
 
-    public void mo3581a(MovieInfo movieInfo, C2361d c2361d, C2016c c2016c) {
+    public void mo3581a(MovieInfo movieInfo, C2361d c2361d, CsfdDataProvider c2016c) {
         mo3571a(this.f5860j);
         if (c2361d != null) {
             c2361d.mo3568i();
@@ -92,7 +92,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3579a(MovieInfo movieInfo, C2332b c2332b, C2016c c2016c) {
+    public void mo3579a(MovieInfo movieInfo, C2332b c2332b, CsfdDataProvider c2016c) {
         mo3585b(this.f5860j);
         if (c2332b != null) {
             c2332b.i_();
@@ -108,7 +108,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3578a(MovieInfo movieInfo, C2327a c2327a, C2016c c2016c) {
+    public void mo3578a(MovieInfo movieInfo, C2327a c2327a, CsfdDataProvider c2016c) {
         mo3587c(this.f5860j);
         if (c2327a != null) {
             c2327a.mo3417g();
@@ -124,7 +124,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3573a(MovieInfo movieInfo, int i, C2249e c2249e, C2016c c2016c) {
+    public void mo3573a(MovieInfo movieInfo, int i, C2249e c2249e, CsfdDataProvider c2016c) {
         mo3589e(this.f5860j);
         if (c2249e != null) {
             c2249e.mo3526b();
@@ -140,7 +140,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3574a(MovieInfo movieInfo, int i, C2362g c2362g, C2016c c2016c, Context context) {
+    public void mo3574a(MovieInfo movieInfo, int i, C2362g c2362g, CsfdDataProvider c2016c, Context context) {
         mo3588d(this.f5860j);
         if (c2362g != null) {
             c2362g.mo3568i();
@@ -156,7 +156,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3582a(MovieInfo movieInfo, C2365f c2365f, C2016c c2016c) {
+    public void mo3582a(MovieInfo movieInfo, C2365f c2365f, CsfdDataProvider c2016c) {
         mo3590f(this.f5860j);
         if (c2365f != null) {
             c2365f.mo3592b();
@@ -172,7 +172,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3583a(MovieInfo movieInfo, final C2318h c2318h, C2016c c2016c, boolean z, boolean z2) {
+    public void mo3583a(MovieInfo movieInfo, final C2318h c2318h, CsfdDataProvider c2016c, boolean z, boolean z2) {
         mo3570a();
         if (c2318h != null) {
             c2318h.mo3563b();
@@ -227,7 +227,7 @@ public class C2368i implements C2366h {
         }
     }
 
-    public void mo3572a(int i, C1945a<Seasons> c1945a, C2016c c2016c) {
+    public void mo3572a(int i, C1945a<Seasons> c1945a, CsfdDataProvider c2016c) {
         c2016c.mo3408e(c1945a, i);
     }
 

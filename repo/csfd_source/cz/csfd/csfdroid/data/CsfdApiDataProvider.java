@@ -4,10 +4,10 @@ import android.content.Context;
 import android.location.Location;
 import android.util.Log;
 import cz.csfd.csfdroid.CsfdApplication;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
-import cz.csfd.csfdroid.data.C2016c.C2019c;
-import cz.csfd.csfdroid.data.C2016c.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
 import cz.csfd.csfdroid.data.entity.ActivityEntity;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.C2024a;
@@ -69,7 +69,7 @@ import org.json.JSONObject;
 
 /* compiled from: CsfdApiDataProvider */
 // C2017a
-public class CsfdApiDataProvider implements C2016c {
+public class CsfdApiDataProvider implements CsfdDataProvider {
     private C2517b f4586a;
     private C2529b f4587b;
     private C2018b f4588c = new C2018b();

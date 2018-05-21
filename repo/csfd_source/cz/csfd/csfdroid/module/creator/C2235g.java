@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.net.Uri.Builder;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.BasicEntity;
 import cz.csfd.csfdroid.data.entity.MovieCreator;
 import cz.csfd.csfdroid.data.entity.MovieVideo;
@@ -36,7 +36,7 @@ public class C2235g implements C2234f {
         context.startActivity(intent);
     }
 
-    public void mo3517a(MovieCreator movieCreator, C2223a c2223a, C2016c c2016c) {
+    public void mo3517a(MovieCreator movieCreator, C2223a c2223a, CsfdDataProvider c2016c) {
         mo3513a(this.f5466f);
         if (c2223a != null) {
             c2223a.mo3510i();
@@ -52,7 +52,7 @@ public class C2235g implements C2234f {
         }
     }
 
-    public void mo3518a(MovieCreator movieCreator, C2231b c2231b, C2016c c2016c) {
+    public void mo3518a(MovieCreator movieCreator, C2231b c2231b, CsfdDataProvider c2016c) {
         mo3519b(this.f5466f);
         if (c2231b != null) {
             c2231b.mo3417g();
@@ -68,7 +68,7 @@ public class C2235g implements C2234f {
         }
     }
 
-    public void mo3514a(int i, int i2, int i3, C1945a<List<MovieVideo>> c1945a, C2016c c2016c, Context context) {
+    public void mo3514a(int i, int i2, int i3, C1945a<List<MovieVideo>> c1945a, CsfdDataProvider c2016c, Context context) {
         mo3520c(this.f5466f);
         this.f5464d = c2016c.mo3357a(i, i2, i3, (C1945a) c1945a, context);
         this.f5466f = i;
@@ -81,7 +81,7 @@ public class C2235g implements C2234f {
         }
     }
 
-    public void mo3515a(MovieCreator movieCreator, int i, int i2, C1945a<MovieCreator> c1945a, C2016c c2016c) {
+    public void mo3515a(MovieCreator movieCreator, int i, int i2, C1945a<MovieCreator> c1945a, CsfdDataProvider c2016c) {
         mo3521d(movieCreator.m6705g());
         this.f5465e = c2016c.mo3373a(movieCreator, i, i2, (C1945a) c1945a);
         this.f5466f = movieCreator.m6705g();

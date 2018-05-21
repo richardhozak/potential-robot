@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.module.home.C2284d.C2281a;
 import cz.csfd.csfdroid.module.home.C2284d.C2283b;
@@ -43,7 +43,7 @@ public class C2285e implements C2284d {
         return new C2282c();
     }
 
-    public void mo3544a(List<String> list, C2281a c2281a, C2016c c2016c, Context context) {
+    public void mo3544a(List<String> list, C2281a c2281a, CsfdDataProvider c2016c, Context context) {
         c2281a.mo3537h();
         if (list.size() == 0) {
             c2281a.mo3324a((Object) Collections.emptyMap());
@@ -52,7 +52,7 @@ public class C2285e implements C2284d {
         }
     }
 
-    public void mo3543a(C1945a<List<MovieInfo>> c1945a, C2016c c2016c, C2283b c2283b, Date date) {
+    public void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, C2283b c2283b, Date date) {
         mo3545b();
         this.f5606a = c2016c.mo3382a(c2283b, date, (C1945a) c1945a);
     }

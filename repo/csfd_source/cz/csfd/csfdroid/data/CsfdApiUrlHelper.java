@@ -2,8 +2,8 @@ package cz.csfd.csfdroid.data;
 
 import android.text.TextUtils;
 import android.util.Base64;
-import cz.csfd.csfdroid.data.C2016c.C2019c;
-import cz.csfd.csfdroid.data.C2016c.C2020d;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2020d;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.module.home.C2284d.C2283b;
 import cz.csfd.csfdroid.p061d.C1998s;

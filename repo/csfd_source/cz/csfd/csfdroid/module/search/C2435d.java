@@ -3,9 +3,9 @@ package cz.csfd.csfdroid.module.search;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri.Builder;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.module.search.C2434c.C2432a;
 import java.util.List;
@@ -23,7 +23,7 @@ public class C2435d implements C2434c {
         context.startActivity(intent);
     }
 
-    public void mo3620a(String str, C2432a c2432a, C2016c c2016c) {
+    public void mo3620a(String str, C2432a c2432a, CsfdDataProvider c2016c) {
         mo3617a();
         if (c2432a != null) {
             c2432a.mo3615h();
@@ -38,7 +38,7 @@ public class C2435d implements C2434c {
         }
     }
 
-    public void mo3618a(String str, int i, C1945a<List<User>> c1945a, C2016c c2016c) {
+    public void mo3618a(String str, int i, C1945a<List<User>> c1945a, CsfdDataProvider c2016c) {
         this.f6060b = c2016c.mo3368a((C1945a) c1945a, str, i);
     }
 

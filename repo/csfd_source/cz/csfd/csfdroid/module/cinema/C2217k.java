@@ -32,7 +32,7 @@ import com.google.android.gms.location.LocationServices;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C2019c;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;

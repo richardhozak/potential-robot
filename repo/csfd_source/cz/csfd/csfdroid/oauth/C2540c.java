@@ -1,7 +1,7 @@
 package cz.csfd.csfdroid.oauth;
 
 import android.content.Context;
-import cz.csfd.csfdroid.data.C2016c;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
 import cz.csfd.csfdroid.data.entity.Identity;
 
 /* compiled from: OAuthService */
@@ -23,7 +23,7 @@ public interface C2540c extends C2539e {
 
     void mo3681a();
 
-    void mo3682a(Context context, C2016c c2016c, C2530a c2530a);
+    void mo3682a(Context context, CsfdDataProvider c2016c, C2530a c2530a);
 
     void mo3683a(C1959b c1959b);
 

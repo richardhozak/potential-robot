@@ -15,7 +15,7 @@ import com.p042c.p043a.C1119t;
 import com.p042c.p049b.C1177s;
 import com.p042c.p049b.C1187t;
 import com.p042c.p049b.C1187t.C1179a;
-import cz.csfd.csfdroid.data.C2016c;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
 import cz.csfd.csfdroid.data.CsfdApiDataProvider;
 import cz.csfd.csfdroid.data.entity.Cinema;
 import cz.csfd.csfdroid.data.entity.MovieCreator;
@@ -56,7 +56,7 @@ public class CsfdApplication extends Application {
     private ArrayList<WeakReference<C1942a>> f4388d = new ArrayList();
     private Tracker f4389e;
     private C2138a f4390f;
-    private C2016c csfdApiDataProvider;
+    private CsfdDataProvider csfdApiDataProvider;
     private CsfdHttpClient csfdHttpClient;
     private C1993o f4393i;
     private C1979b f4394j;
@@ -175,7 +175,7 @@ public class CsfdApplication extends Application {
         return this.f4390f;
     }
 
-    public C2016c m6220h() {
+    public CsfdDataProvider m6220h() {
         return this.csfdApiDataProvider;
     }
 

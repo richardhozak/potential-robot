@@ -7,9 +7,9 @@ import android.accounts.AccountManagerFuture;
 import android.app.Activity;
 import android.os.Bundle;
 import com.onesignal.ae;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.Identity;
 import cz.csfd.csfdroid.data.entity.Identity.Acl;
 import cz.csfd.csfdroid.oauth.C2538b;
@@ -20,7 +20,7 @@ import java.util.Map.Entry;
 
 /* compiled from: Accounts */
 public class C1950a {
-    private C2016c f4412a;
+    private CsfdDataProvider f4412a;
     private AccountManager f4413b;
     private C2540c f4414c;
     private C2011b f4415d;
@@ -65,7 +65,7 @@ public class C1950a {
         void mo3534a();
     }
 
-    public C1950a(AccountManager accountManager, C2540c c2540c, C2016c c2016c) {
+    public C1950a(AccountManager accountManager, C2540c c2540c, CsfdDataProvider c2016c) {
         this.f4412a = c2016c;
         this.f4413b = accountManager;
         this.f4414c = c2540c;

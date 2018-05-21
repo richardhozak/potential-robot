@@ -3,8 +3,8 @@ package cz.csfd.csfdroid.oauth;
 import android.content.Context;
 import android.os.AsyncTask;
 import com.p042c.p043a.C1123v;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.Identity;
 import cz.csfd.csfdroid.data.p062a.ConsumerSecretService;
 import cz.csfd.csfdroid.net.CsfdHttpClient;
@@ -23,7 +23,7 @@ public class OAuthServiceImpl implements C2540c {
     private final String consumerSecret;
     private C2530a f6346b;
     private Context f6347c;
-    private C2016c f6348d;
+    private CsfdDataProvider f6348d;
     private CsfdHttpClient f6349e;
     private C0792d okHttpAuthConsumer;
     private C2564e f6351g;
@@ -157,7 +157,7 @@ public class OAuthServiceImpl implements C2540c {
         }
     }
 
-    public void mo3682a(Context context, C2016c c2016c, C2530a c2530a) {
+    public void mo3682a(Context context, CsfdDataProvider c2016c, C2530a c2530a) {
         this.f6346b = c2530a;
         this.f6347c = context;
         this.f6348d = c2016c;

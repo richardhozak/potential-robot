@@ -11,7 +11,7 @@ import android.widget.TextView;
 import cz.csfd.csfdroid.C1974c;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.Season;
 import cz.csfd.csfdroid.data.entity.Seasons;
 import cz.csfd.csfdroid.module.movie.C2366h;

@@ -21,7 +21,7 @@ import android.widget.TextView;
 import com.google.android.gms.analytics.HitBuilders.ScreenViewBuilder;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.MovieCreator;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.data.entity.Photo;

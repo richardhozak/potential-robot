@@ -3,9 +3,9 @@ package cz.csfd.csfdroid.module.tvschedule;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.TvStation;
 import cz.csfd.csfdroid.module.home.DrawerFragment.C2254b;
 import cz.csfd.csfdroid.module.home.MainActivity;
@@ -34,7 +34,7 @@ public class C2451e implements C2450d {
         return intent;
     }
 
-    public void mo3628a(C1945a<List<TvStation>> c1945a, C2016c c2016c, Date date, List<Integer> list, int i, boolean z) {
+    public void mo3628a(C1945a<List<TvStation>> c1945a, CsfdDataProvider c2016c, Date date, List<Integer> list, int i, boolean z) {
         this.f6131a = c2016c.mo3369a((C1945a) c1945a, date, (List) list, i, z);
     }
 

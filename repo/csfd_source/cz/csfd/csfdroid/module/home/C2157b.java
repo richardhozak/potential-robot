@@ -23,7 +23,7 @@ import cz.csfd.csfdroid.C1964b;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.module.chart.C2164b;
 import cz.csfd.csfdroid.module.cinema.C2197e;

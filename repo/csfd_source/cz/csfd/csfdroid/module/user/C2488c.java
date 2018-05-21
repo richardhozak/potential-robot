@@ -32,7 +32,7 @@ import com.p042c.p049b.ac;
 import cz.csfd.csfdroid.C1999d;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.C2028e;
 import cz.csfd.csfdroid.data.entity.MovieCreator;
 import cz.csfd.csfdroid.data.entity.MovieInfo;

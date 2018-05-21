@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 /* compiled from: CsfdDataProvider */
-public interface C2016c {
+public interface CsfdDataProvider {
 
     /* compiled from: CsfdDataProvider */
     public interface C1945a<T> {

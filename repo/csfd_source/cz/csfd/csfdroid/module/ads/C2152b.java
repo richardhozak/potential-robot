@@ -8,9 +8,9 @@ import android.util.Log;
 import android.util.TypedValue;
 import cz.csfd.csfdroid.C2057e;
 import cz.csfd.csfdroid.CsfdApplication;
-import cz.csfd.csfdroid.data.C2016c;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
-import cz.csfd.csfdroid.data.C2016c.C2011b;
+import cz.csfd.csfdroid.data.CsfdDataProvider;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.C2024a;
 import cz.csfd.csfdroid.data.entity.C2025b;
 import cz.csfd.csfdroid.module.ads.C2147a.C2139a;
@@ -25,11 +25,11 @@ import java.util.Map;
 public class C2152b implements C2147a {
     private boolean f5188a;
 
-    public C2011b m7645a(C1945a<C2025b> c1945a, C2016c c2016c, Context context) {
+    public C2011b m7645a(C1945a<C2025b> c1945a, CsfdDataProvider c2016c, Context context) {
         return c2016c.mo3404d(c1945a);
     }
 
-    public C2011b mo3446a(C2146b c2146b, HashMap<String, String> hashMap, final C2139a c2139a, C2016c c2016c, Context context) {
+    public C2011b mo3446a(C2146b c2146b, HashMap<String, String> hashMap, final C2139a c2139a, CsfdDataProvider c2016c, Context context) {
         final C2057e n = C1998s.m6365a(context).m6226n();
         if (n.m7203i() > System.currentTimeMillis()) {
             C1998s.m6372a(getClass(), "No ad this time, next ad at: " + new Date(n.m7203i()));
@@ -78,7 +78,7 @@ public class C2152b implements C2147a {
         }, applyDimension, applyDimension2, c2146b.m7622a(), (Map) hashMap);
     }
 
-    public C2011b mo3450b(C2146b c2146b, HashMap<String, String> hashMap, final C2139a c2139a, C2016c c2016c, Context context) {
+    public C2011b mo3450b(C2146b c2146b, HashMap<String, String> hashMap, final C2139a c2139a, CsfdDataProvider c2016c, Context context) {
         final C2057e n = C1998s.m6365a(context).m6226n();
         if (n.m7204j() > System.currentTimeMillis()) {
             C1998s.m6372a(getClass(), "No bottom ad this time, next ad at: " + new Date(n.m7204j()));
@@ -118,7 +118,7 @@ public class C2152b implements C2147a {
         }, applyDimension, applyDimension2, c2146b.m7622a(), (Map) hashMap);
     }
 
-    public C2011b mo3445a(C2016c c2016c, final Context context) {
+    public C2011b mo3445a(CsfdDataProvider c2016c, final Context context) {
         C1997a a = C1998s.m6366a(context.getResources());
         return c2016c.mo3363a(new C1945a<C2024a>(this) {
             final /* synthetic */ C2152b f5185b;
@@ -145,7 +145,7 @@ public class C2152b implements C2147a {
         return this.f5188a;
     }
 
-    public void mo3447a(C2016c c2016c, Context context, final C2057e c2057e) {
+    public void mo3447a(CsfdDataProvider c2016c, Context context, final C2057e c2057e) {
         m7645a(new C1945a<C2025b>(this) {
             final /* synthetic */ C2152b f5187b;
 

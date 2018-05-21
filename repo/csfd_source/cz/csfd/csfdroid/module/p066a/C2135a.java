@@ -16,7 +16,7 @@ import android.widget.SpinnerAdapter;
 import cz.csfd.csfdroid.C2063g;
 import cz.csfd.csfdroid.CsfdApplication;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.C2031h;
 import cz.csfd.csfdroid.data.entity.MovieVideo;
 import cz.csfd.csfdroid.data.entity.MovieVideos;

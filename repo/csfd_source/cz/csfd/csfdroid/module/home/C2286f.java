@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ListView;
 import cz.csfd.csfdroid.C2063g;
 import cz.csfd.csfdroid.R;
-import cz.csfd.csfdroid.data.C2016c.C1945a;
+import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.gd.widget.C2086a;
 import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
