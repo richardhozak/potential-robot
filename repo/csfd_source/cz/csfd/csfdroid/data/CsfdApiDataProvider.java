@@ -1187,7 +1187,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
     public C2011b mo3365a(C1945a<C2024a> c1945a, int i, int i2, String str, Map<String, String> map) {
         Log.d("CsfdApiDataProvider", "getAdBanner");
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6649a(i, i2, str, (Map) map), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_adBannerWithWidthAndHeightAndSectionAndParameters(i, i2, str, (Map) map), 2);
             C2000b anonymousClass32 = new C2001b<C2024a>(this, c1945a, true) {
                 final /* synthetic */ CsfdApiDataProvider f4531a;
 

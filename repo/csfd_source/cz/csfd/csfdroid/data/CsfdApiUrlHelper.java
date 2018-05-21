@@ -299,7 +299,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6649a(int i, int i2, String str, Map<String, String> map) {
+    public String url_adBannerWithWidthAndHeightAndSectionAndParameters(int i, int i2, String str, Map<String, String> map) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("ad/banner").append("?").append("width=").append(i).append("&").append("height=").append(i2).append("&").append("section=").append(str);
         if (map != null && map.size() > 0) {
