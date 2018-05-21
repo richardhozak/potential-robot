@@ -21,7 +21,7 @@ public interface C2284d {
     }
 
     /* compiled from: HomeModule */
-    public enum C2283b {
+    public enum Enum_ReleaseType {
         CINEMA,
         DVD,
         BLURAY
@@ -29,15 +29,15 @@ public interface C2284d {
 
     Intent mo3538a(Context context);
 
-    Intent mo3539a(Context context, C2283b c2283b);
+    Intent mo3539a(Context context, Enum_ReleaseType c2283b);
 
     Fragment mo3540a();
 
-    Fragment mo3541a(C2283b c2283b);
+    Fragment mo3541a(Enum_ReleaseType c2283b);
 
     void mo3542a(FragmentActivity fragmentActivity);
 
-    void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, C2283b c2283b, Date date);
+    void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, Enum_ReleaseType c2283b, Date date);
 
     void mo3544a(List<String> list, C2281a c2281a, CsfdDataProvider c2016c, Context context);
 

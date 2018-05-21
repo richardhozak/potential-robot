@@ -23,7 +23,7 @@ import cz.csfd.csfdroid.data.entity.TvStation;
 import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.data.entity.WatchlistMovie;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -140,7 +140,7 @@ public interface CsfdDataProvider {
 
     C2011b mo3381a(User user, Section section, C1945a<List<Object>> c1945a);
 
-    C2011b mo3382a(C2283b c2283b, Date date, C1945a<List<MovieInfo>> c1945a);
+    C2011b mo3382a(Enum_ReleaseType c2283b, Date date, C1945a<List<MovieInfo>> c1945a);
 
     C2011b mo3383a(String str, int i, boolean z, C2019c c2019c, C1945a<Map<String, List<Cinema>>> c1945a);
 

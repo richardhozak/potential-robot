@@ -12,7 +12,7 @@ import cz.csfd.csfdroid.gd.widget.p065a.C2083a;
 import cz.csfd.csfdroid.list.p063a.C2094q;
 import cz.csfd.csfdroid.module.C2138a;
 import cz.csfd.csfdroid.module.ads.C2147a.C2146b;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import cz.csfd.csfdroid.module.movie.C2366h;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -27,14 +27,14 @@ public class C2286f extends C2063g<List<MovieInfo>> {
     private List<MovieInfo> f5611n = new ArrayList();
     private Calendar f5612o;
     private Calendar f5613p;
-    private C2283b f5614q;
+    private Enum_ReleaseType f5614q;
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         C2138a g = this.b.m6219g();
         this.f5607j = g.mo3451a();
         this.f5608k = g.mo3453c();
-        this.f5614q = (C2283b) getArguments().getSerializable("release_type");
+        this.f5614q = (Enum_ReleaseType) getArguments().getSerializable("release_type");
         this.f5612o = m8263m();
         this.f5613p = this.f5612o;
     }

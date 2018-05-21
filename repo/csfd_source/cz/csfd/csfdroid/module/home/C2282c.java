@@ -52,7 +52,7 @@ import cz.csfd.csfdroid.module.ads.C2147a;
 import cz.csfd.csfdroid.module.ads.C2147a.C2146b;
 import cz.csfd.csfdroid.module.cinema.C2197e;
 import cz.csfd.csfdroid.module.home.C2284d.C2281a;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import cz.csfd.csfdroid.module.movie.C2366h.C2364c;
 import cz.csfd.csfdroid.oauth.C2540c.C1959b;
 import cz.csfd.csfdroid.p061d.C1978a;
@@ -451,11 +451,11 @@ public class C2282c extends C1974c implements OnItemClickListener, C2110a, C2281
         } else if (c.equals("tv_tips")) {
             startActivity(this.f5583a.m6219g().mo3462l().mo3631a(getActivity()));
         } else if (c.equals("cinema_releases")) {
-            startActivity(this.f5584b.mo3539a(getActivity(), C2283b.CINEMA));
+            startActivity(this.f5584b.mo3539a(getActivity(), Enum_ReleaseType.CINEMA));
         } else if (c.equals("dvd_releases")) {
-            startActivity(this.f5584b.mo3539a(getActivity(), C2283b.DVD));
+            startActivity(this.f5584b.mo3539a(getActivity(), Enum_ReleaseType.DVD));
         } else if (c.equals("bluray_releases")) {
-            startActivity(this.f5584b.mo3539a(getActivity(), C2283b.BLURAY));
+            startActivity(this.f5584b.mo3539a(getActivity(), Enum_ReleaseType.BLURAY));
         } else if (c.equals("favorite_cinemas")) {
             this.f5586d.mo3503b(getActivity());
         } else if (c.equals("new_videos")) {

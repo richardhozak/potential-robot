@@ -28,7 +28,7 @@ import cz.csfd.csfdroid.data.entity.TvStation;
 import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.data.entity.User.Section;
 import cz.csfd.csfdroid.data.entity.WatchlistMovie;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import cz.csfd.csfdroid.net.C2517b;
 import cz.csfd.csfdroid.net.p067a.C2496a;
 import cz.csfd.csfdroid.net.p067a.C2497b;
@@ -1208,7 +1208,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
         }
     }
 
-    public C2011b mo3382a(final C2283b c2283b, Date date, C1945a<List<MovieInfo>> c1945a) {
+    public C2011b mo3382a(final Enum_ReleaseType c2283b, Date date, C1945a<List<MovieInfo>> c1945a) {
         try {
             Request request = new Request(this.csfdApiUrlHelper.m6653a(c2283b, date), 1);
             C2000b anonymousClass33 = new C2001b<List<MovieInfo>>(this, c1945a) {

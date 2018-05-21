@@ -28,7 +28,7 @@ import cz.csfd.csfdroid.data.entity.User;
 import cz.csfd.csfdroid.module.chart.C2164b;
 import cz.csfd.csfdroid.module.cinema.C2197e;
 import cz.csfd.csfdroid.module.favorites.C2238b;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import cz.csfd.csfdroid.module.home.DrawerFragment.C2156a;
 import cz.csfd.csfdroid.module.home.DrawerFragment.C2254b;
 import cz.csfd.csfdroid.module.messages.C2297d;
@@ -378,10 +378,10 @@ public abstract class C2157b extends C1964b implements C2156a {
     private void m7688z() {
         C2284d a = this.f5216e.m6219g().mo3451a();
         if (mo3531b(C2254b.BLURAY)) {
-            startActivity(a.mo3539a(this, C2283b.BLURAY));
+            startActivity(a.mo3539a(this, Enum_ReleaseType.BLURAY));
             finish();
         } else {
-            m7690a(a.mo3541a(C2283b.BLURAY), false, true);
+            m7690a(a.mo3541a(Enum_ReleaseType.BLURAY), false, true);
             this.f5215d.m8163a(C2254b.BLURAY);
         }
         m6282a("sidenav", "bluray", mo3436p(), 0);
@@ -390,10 +390,10 @@ public abstract class C2157b extends C1964b implements C2156a {
     private void m7677A() {
         C2284d a = this.f5216e.m6219g().mo3451a();
         if (mo3531b(C2254b.DVD)) {
-            startActivity(a.mo3539a(this, C2283b.DVD));
+            startActivity(a.mo3539a(this, Enum_ReleaseType.DVD));
             finish();
         } else {
-            m7690a(a.mo3541a(C2283b.DVD), false, true);
+            m7690a(a.mo3541a(Enum_ReleaseType.DVD), false, true);
             this.f5215d.m8163a(C2254b.DVD);
         }
         m6282a("sidenav", "dvd", mo3436p(), 0);

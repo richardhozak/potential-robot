@@ -10,7 +10,7 @@ import cz.csfd.csfdroid.data.CsfdDataProvider.C1945a;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2011b;
 import cz.csfd.csfdroid.data.entity.MovieInfo;
 import cz.csfd.csfdroid.module.home.C2284d.C2281a;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -25,13 +25,13 @@ public class C2285e implements C2284d {
         return intent;
     }
 
-    public Intent mo3539a(Context context, C2283b c2283b) {
+    public Intent mo3539a(Context context, Enum_ReleaseType c2283b) {
         Intent intent = new Intent(context, ReleasesActivity.class);
         intent.putExtra("release_type", c2283b);
         return intent;
     }
 
-    public Fragment mo3541a(C2283b c2283b) {
+    public Fragment mo3541a(Enum_ReleaseType c2283b) {
         Fragment c2286f = new C2286f();
         Bundle bundle = new Bundle();
         bundle.putSerializable("release_type", c2283b);
@@ -52,7 +52,7 @@ public class C2285e implements C2284d {
         }
     }
 
-    public void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, C2283b c2283b, Date date) {
+    public void mo3543a(C1945a<List<MovieInfo>> c1945a, CsfdDataProvider c2016c, Enum_ReleaseType c2283b, Date date) {
         mo3545b();
         this.f5606a = c2016c.mo3382a(c2283b, date, (C1945a) c1945a);
     }

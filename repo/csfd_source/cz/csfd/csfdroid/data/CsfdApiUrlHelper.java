@@ -5,7 +5,7 @@ import android.util.Base64;
 import cz.csfd.csfdroid.data.CsfdDataProvider.C2019c;
 import cz.csfd.csfdroid.data.CsfdDataProvider.Enum_OrderBy;
 import cz.csfd.csfdroid.data.entity.User.Section;
-import cz.csfd.csfdroid.module.home.C2284d.C2283b;
+import cz.csfd.csfdroid.module.home.C2284d.Enum_ReleaseType;
 import cz.csfd.csfdroid.p061d.C1998s;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -308,7 +308,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6653a(C2283b c2283b, Date date) {
+    public String m6653a(Enum_ReleaseType c2283b, Date date) {
         String format = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH).format(date);
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("releases").append("/").append(c2283b.toString().toLowerCase()).append("?date=").append(format);
