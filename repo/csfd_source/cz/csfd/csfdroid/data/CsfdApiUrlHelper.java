@@ -20,7 +20,7 @@ import org.json.JSONObject;
 /* compiled from: CsfdApiUrlHelper */
 // C2018b
 public class CsfdApiUrlHelper {
-    public String m6659a(List<String> list) {
+    public String url_homeData(List<String> list) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("home?data=");
         for (String append : list) {
@@ -43,29 +43,29 @@ public class CsfdApiUrlHelper {
     }
 
     public String m6645a(int i) {
-        StringBuilder p = m6642p(i);
+        StringBuilder p = url_creatorBuilder(i);
         p.append("/").append("films").append("?return=array");
         return p.toString();
     }
 
-    public String m6661b(int i) {
-        return m6642p(i).toString();
+    public String url_creator(int i) {
+        return url_creatorBuilder(i).toString();
     }
 
-    private StringBuilder m6642p(int i) {
+    private StringBuilder url_creatorBuilder(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("creator").append("/").append(i);
         return stringBuilder;
     }
 
     public String m6647a(int i, int i2, int i3) {
-        StringBuilder p = m6642p(i);
+        StringBuilder p = url_creatorBuilder(i);
         p.append("/").append("videos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
         return p.toString();
     }
 
     public String m6663b(int i, int i2, int i3) {
-        StringBuilder p = m6642p(i);
+        StringBuilder p = url_creatorBuilder(i);
         p.append("/").append("photos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
         return p.toString();
     }
