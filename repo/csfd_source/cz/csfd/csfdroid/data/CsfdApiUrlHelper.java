@@ -212,59 +212,60 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6656a(String str, int i, int i2) {
+    public String url_chartsFromNameWithOffsetAndLimit(String str, int i, int i2) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("charts").append("/").append(str).append("?").append("offset=").append(i).append("&").append("limit=").append(i2);
         return stringBuilder.toString();
     }
 
-    public String m6684h(int i) {
+    public String url_userFromId(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("user").append("/").append(i);
         return stringBuilder.toString();
     }
 
-    public String m6677e(int i, int i2, int i3) {
+    public String url_filmRatingsFromUserIdWithOffsetAndLimit(int i, int i2, int i3) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("user").append("/").append(i).append("/").append("film-ratings").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
         return stringBuilder.toString();
     }
 
-    public String m6679f(int i, int i2, int i3) {
+    public String url_filmCommentsFromsUserIdWithOffsetAndLimit(int i, int i2, int i3) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("user").append("/").append(i).append("/").append("film-comments").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
         return stringBuilder.toString();
     }
 
-    public String m6650a(int i, String str) {
+    public String url_sectionFromUserIdAndSectionPath(int i, String str) {
         StringBuilder stringBuilder = new StringBuilder();
         String str2 = "fanclub-" + str.toLowerCase();
-        if (str.equals(Section.FAVOURITE_USERS.m7079d())) {
+        if (str.equals(Section.FAVOURITE_USERS.sectionPath())) {
             str2 = "favorites";
         }
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("user").append("/").append(i).append("/").append(str2);
         return stringBuilder.toString();
     }
 
-    public String m6687i(int i) {
+    public String url_favoritesActivitiyWithOffset(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("favorites").append("/").append("activity").append("/?").append("types").append("=film_rating%2Cfilm_comment").append("&").append("limit").append("=").append(20).append("&").append("offset").append("=").append(i);
         return stringBuilder.toString();
     }
 
-    public String m6689j(int i) {
+    public String url_watchlistWithOffset(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("watchlist").append("/?").append("limit").append("=").append(20).append("&").append("offset").append("=").append(i);
         return stringBuilder.toString();
     }
 
-    public String m6672d() {
+    public String url_watchlist() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("watchlist");
         return stringBuilder.toString();
     }
 
-    public String m6691k(int i) {
+    // probably used to PUT or DELETE films from watchlist
+    public String url_watchlistWithFilmId(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("watchlist").append("/?").append("film_id").append("=").append(i);
         return stringBuilder.toString();

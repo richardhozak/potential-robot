@@ -93,7 +93,7 @@ public class User extends BasicEntity implements Serializable {
             return this.label;
         }
 
-        public String m7079d() {
+        public String sectionPath() {
             return this.path;
         }
 

@@ -832,7 +832,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3371a(Chart chart, int i, int i2, C1945a<Chart> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6656a(chart.m6718a(), i, i2), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_chartsFromNameWithOffsetAndLimit(chart.m6718a(), i, i2), 1);
             final int i3 = i;
             final Chart chart2 = chart;
             final int i4 = i2;
@@ -865,7 +865,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3380a(final User user, C1945a<User> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6684h(user.m6705g()), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_userFromId(user.m6705g()), 1);
             C2000b anonymousClass18 = new C2001b<User>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4507b;
 
@@ -891,7 +891,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3379a(final User user, int i, final int i2, C1945a<List<C2028e>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6677e(user.m6705g(), i, i2), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_filmRatingsFromUserIdWithOffsetAndLimit(user.m6705g(), i, i2), 1);
             C2000b anonymousClass19 = new C2001b<List<C2028e>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4510c;
 
@@ -920,7 +920,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3397b(final User user, int i, final int i2, C1945a<List<C2028e>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6679f(user.m6705g(), i, i2), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_filmCommentsFromsUserIdWithOffsetAndLimit(user.m6705g(), i, i2), 1);
             C2000b anonymousClass20 = new C2001b<List<C2028e>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4514c;
 
@@ -949,7 +949,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3381a(final User user, final Section section, C1945a<List<Object>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6650a(user.m6705g(), section.m7079d()), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_sectionFromUserIdAndSectionPath(user.m6705g(), section.sectionPath()), 1);
             C2000b anonymousClass21 = new C2001b<List<Object>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4517c;
 
@@ -975,7 +975,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3362a(C1945a<List<ActivityEntity>> c1945a, int i) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6687i(i), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_favoritesActivitiyWithOffset(i), 1);
             C2000b anonymousClass22 = new C2001b<List<ActivityEntity>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4518a;
 
@@ -998,7 +998,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3390b(C1945a<List<WatchlistMovie>> c1945a, int i) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6689j(i), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_watchlistWithOffset(i), 1);
             C2000b anonymousClass24 = new C2001b<List<WatchlistMovie>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4521a;
 
@@ -1021,7 +1021,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3399c(int i, C1945a<Object> c1945a) {
         try {
-            String d = this.csfdApiUrlHelper.m6672d();
+            String d = this.csfdApiUrlHelper.url_watchlist();
             Map hashMap = new HashMap();
             hashMap.put("film_id", String.valueOf(i));
             Request request = new Request(d, C2522a.POST, hashMap, 4);
@@ -1043,7 +1043,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3403d(int i, C1945a<Object> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6691k(i), C2522a.DELETE, null, 4);
+            Request request = new Request(this.csfdApiUrlHelper.url_watchlistWithFilmId(i), C2522a.DELETE, null, 4);
             C2000b anonymousClass26 = new C2001b<Object>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4523a;
 
