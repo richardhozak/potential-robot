@@ -106,7 +106,7 @@ public class CsfdApiUrlHelper {
         return q.toString();
     }
 
-    public String m6676e(int i) {
+    public String url_myCommentFromFilmId(int i) {
         StringBuilder q = url_filmFromIdBuilder(i);
         q.append("/").append("my-comment");
         return q.toString();
@@ -122,7 +122,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder;
     }
 
-    public String m6654a(String str) {
+    public String url_searchWithQuery(String str) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("search?q=").append(URLEncoder.encode(str, HTTP.UTF_8));
@@ -132,7 +132,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6655a(String str, int i) {
+    public String url_searchUsersWithQueryAndLimit(String str, int i) {
         String str2;
         Exception e;
         try {
@@ -190,7 +190,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6666b(String str) {
+    public String url_cinemaFromTowns(String str) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("towns").append("?").append("name=").append(URLEncoder.encode(str, HTTP.UTF_8));
@@ -200,13 +200,13 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6681g(int i) {
+    public String url_cinemaFromId(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append(i);
         return stringBuilder.toString();
     }
 
-    public String m6668c() {
+    public String url_charts() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("charts").append("/");
         return stringBuilder.toString();
