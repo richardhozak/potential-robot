@@ -215,7 +215,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3361a(C1945a<Identity> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6660b(), 0);
+            Request request = new Request(this.csfdApiUrlHelper.url_identity(), 0);
             C2000b c20021 = new C2001b<Identity>(this, c1945a, true) {
                 final /* synthetic */ CsfdApiDataProvider f4511a;
 
@@ -475,7 +475,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3394b(final MovieCreator movieCreator, C1945a<MovieCreator> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6645a(movieCreator.m6705g()), 1);
+            Request request = new Request(this.csfdApiUrlHelper.url_filmsFromCreatorId(movieCreator.m6705g()), 1);
             C2000b c20032 = new C2001b<MovieCreator>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4528b;
 
@@ -645,7 +645,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3360a(final Location location, int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6644a(location.getLatitude(), location.getLongitude(), i, !z, c2019c), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_cinemaFromNearestWithFilmIdAndOnlyWithScheduleAndTimeRange(location.getLatitude(), location.getLongitude(), i, !z, c2019c), 2);
             C2000b c20098 = new C2001b<List<Cinema>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4579b;
 
@@ -669,7 +669,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3383a(String str, int i, boolean z, Enum_TimeRange c2019c, C1945a<Map<String, List<Cinema>>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6657a(str, i, !z, c2019c), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_cinemaFromTownsWithFilmIdAndOnlyWithScheduleAndTimeRange(str, i, !z, c2019c), 2);
             C2000b c20109 = new C2001b<Map<String, List<Cinema>>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4580a;
 
@@ -693,7 +693,7 @@ public class CsfdApiDataProvider implements CsfdDataProvider {
 
     public C2011b mo3359a(int i, boolean z, Enum_TimeRange c2019c, C1945a<List<Cinema>> c1945a) {
         try {
-            Request request = new Request(this.csfdApiUrlHelper.m6651a(i, !z, c2019c), 2);
+            Request request = new Request(this.csfdApiUrlHelper.url_cinemaFavoritesWithFilmIdAndOnlyWithScheduleAndTimeRange(i, !z, c2019c), 2);
             C2000b anonymousClass10 = new C2001b<List<Cinema>>(this, c1945a) {
                 final /* synthetic */ CsfdApiDataProvider f4494a;
 

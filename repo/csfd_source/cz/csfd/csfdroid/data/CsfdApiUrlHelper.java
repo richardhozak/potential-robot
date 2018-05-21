@@ -36,13 +36,13 @@ public class CsfdApiUrlHelper {
         return "https://android-api.csfd.cz";
     }
 
-    public String m6660b() {
+    public String url_identity() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append(HTTP.IDENTITY_CODING);
         return stringBuilder.toString();
     }
 
-    public String m6645a(int i) {
+    public String url_filmsFromCreatorId(int i) {
         StringBuilder p = url_creatorFromIdBuilder(i);
         p.append("/").append("films").append("?return=array");
         return p.toString();
@@ -156,7 +156,7 @@ public class CsfdApiUrlHelper {
         return str2;
     }
 
-    public String m6644a(double d, double d2, int i, boolean z, Enum_TimeRange c2019c) {
+    public String url_cinemaFromNearestWithFilmIdAndOnlyWithScheduleAndTimeRange(double d, double d2, int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("nearest").append("?").append("latitude=").append(d).append("&").append("longitude=").append(d2);
         if (i > 0) {
@@ -171,7 +171,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6657a(String str, int i, boolean z, Enum_TimeRange c2019c) {
+    public String url_cinemaFromTownsWithFilmIdAndOnlyWithScheduleAndTimeRange(String str, int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("towns").append("?").append("name=").append(URLEncoder.encode(str, HTTP.UTF_8)).append("&with_cinemas=1");
@@ -321,7 +321,7 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6651a(int i, boolean z, Enum_TimeRange c2019c) {
+    public String url_cinemaFavoritesWithFilmIdAndOnlyWithScheduleAndTimeRange(int i, boolean z, Enum_TimeRange c2019c) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("cinema").append("/").append("favorites");
         if (i > 0) {
