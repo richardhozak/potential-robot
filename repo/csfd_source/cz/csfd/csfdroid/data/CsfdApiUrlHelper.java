@@ -43,80 +43,80 @@ public class CsfdApiUrlHelper {
     }
 
     public String m6645a(int i) {
-        StringBuilder p = url_creatorBuilder(i);
+        StringBuilder p = url_creatorFromIdBuilder(i);
         p.append("/").append("films").append("?return=array");
         return p.toString();
     }
 
-    public String url_creator(int i) {
-        return url_creatorBuilder(i).toString();
+    public String url_creatorFromId(int i) {
+        return url_creatorFromIdBuilder(i).toString();
     }
 
-    private StringBuilder url_creatorBuilder(int i) {
+    private StringBuilder url_creatorFromIdBuilder(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("creator").append("/").append(i);
         return stringBuilder;
     }
 
-    public String m6647a(int i, int i2, int i3) {
-        StringBuilder p = url_creatorBuilder(i);
-        p.append("/").append("videos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
+    public String url_videosFromCreatorIdWithOffsetAndLimit(int creatorId, int offset, int limit) {
+        StringBuilder p = url_creatorFromIdBuilder(creatorId);
+        p.append("/").append("videos").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit);
         return p.toString();
     }
 
-    public String m6663b(int i, int i2, int i3) {
-        StringBuilder p = url_creatorBuilder(i);
-        p.append("/").append("photos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
+    public String url_photosFromCreatorIdWithOffsetAndLimit(int creatorId, int offset, int limit) {
+        StringBuilder p = url_creatorFromIdBuilder(creatorId);
+        p.append("/").append("photos").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit);
         return p.toString();
     }
 
-    public String m6648a(int i, int i2, int i3, int i4) {
-        StringBuilder q = m6643q(i);
-        q.append("/").append("photos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3).append("&").append("size=all").append("&").append("width=").append(i4);
+    public String url_photosFromFilmIdWithOffsetAndLimitAndWidth(int filmId, int offset, int limit, int width) {
+        StringBuilder q = url_filmFromIdBuilder(filmId);
+        q.append("/").append("photos").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit).append("&").append("size=all").append("&").append("width=").append(width);
         return q.toString();
     }
 
-    public String m6664b(int i, int i2, int i3, int i4) {
-        StringBuilder q = m6643q(i);
-        q.append("/").append("videos").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3).append("&").append("width=").append(i4);
+    public String url_videosFromFilmIdWithOffsetAndLimitAndWidth(int filmId, int offset, int limit, int width) {
+        StringBuilder q = url_filmFromIdBuilder(filmId);
+        q.append("/").append("videos").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit).append("&").append("width=").append(width);
         return q.toString();
     }
 
-    public String m6670c(int i, int i2, int i3) {
-        StringBuilder q = m6643q(i);
-        q.append("/").append("comments").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
+    public String url_commentsFromFilmIdWithOffsetAndLimit(int filmId, int offset, int limit) {
+        StringBuilder q = url_filmFromIdBuilder(filmId);
+        q.append("/").append("comments").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit);
         return q.toString();
     }
 
-    public String m6674d(int i, int i2, int i3) {
-        StringBuilder q = m6643q(i);
-        q.append("/").append("trivia").append("?").append("offset=").append(i2).append("&").append("limit=").append(i3);
+    public String url_triviaFromFilmIdWithOffsetAndLimit(int filmId, int offset, int limit) {
+        StringBuilder q = url_filmFromIdBuilder(filmId);
+        q.append("/").append("trivia").append("?").append("offset=").append(offset).append("&").append("limit=").append(limit);
         return q.toString();
     }
 
-    public String m6669c(int i) {
-        StringBuilder q = m6643q(i);
+    public String url_creatorsFromFilmId(int i) {
+        StringBuilder q = url_filmFromIdBuilder(i);
         q.append("/").append("creators");
         return q.toString();
     }
 
-    public String m6673d(int i) {
-        StringBuilder q = m6643q(i);
+    public String url_myRatingFromFilmId(int i) {
+        StringBuilder q = url_filmFromIdBuilder(i);
         q.append("/").append("my-rating");
         return q.toString();
     }
 
     public String m6676e(int i) {
-        StringBuilder q = m6643q(i);
+        StringBuilder q = url_filmFromIdBuilder(i);
         q.append("/").append("my-comment");
         return q.toString();
     }
 
-    public String m6678f(int i) {
-        return m6643q(i).toString();
+    public String url_filmFromId(int i) {
+        return url_filmFromIdBuilder(i).toString();
     }
 
-    private StringBuilder m6643q(int i) {
+    private StringBuilder url_filmFromIdBuilder(int i) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("film").append("/").append(i);
         return stringBuilder;
