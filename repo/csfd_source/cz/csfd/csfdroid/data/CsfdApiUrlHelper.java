@@ -394,31 +394,31 @@ public class CsfdApiUrlHelper {
         return stringBuilder.toString();
     }
 
-    public String m6667b(List<Integer> list) {
-        return CsfdApiUrlHelper.getBaseApiUrl() + "/messages/delete/?user_id=" + m6640a((List) list, ",");
+    public String url_messagesDeleteWithUserIdList(List<Integer> list) {
+        return CsfdApiUrlHelper.getBaseApiUrl() + "/messages/delete/?user_id=" + joinListWithSeparator((List) list, ",");
     }
 
-    public String m6671c(List<String> list) {
-        return CsfdApiUrlHelper.getBaseApiUrl() + "/messages/delete/?message_id=" + m6640a((List) list, ",");
+    public String url_messagesDeleteWithMessageIdList(List<String> list) {
+        return CsfdApiUrlHelper.getBaseApiUrl() + "/messages/delete/?message_id=" + joinListWithSeparator((List) list, ",");
     }
 
-    public String m6688j() {
+    public String url_messagesUnreadThreads() {
         return CsfdApiUrlHelper.getBaseApiUrl() + "/messages/unread-threads";
     }
 
-    public String m6694m(int i) {
+    public String url_userIdFavoritesAdd(int i) {
         return CsfdApiUrlHelper.getBaseApiUrl() + "/" + "user" + "/" + i + "/" + "favorites-add";
     }
 
-    public String m6695n(int i) {
+    public String url_userIdFavoritesRemove(int i) {
         return CsfdApiUrlHelper.getBaseApiUrl() + "/" + "user" + "/" + i + "/" + "favorites-remove";
     }
 
-    public String m6696o(int i) {
+    public String url_filmEpisodesFromFilmId(int i) {
         return CsfdApiUrlHelper.getBaseApiUrl() + "/film/" + i + "/episodes";
     }
 
-    private String m6640a(List list, String str) {
+    private String joinListWithSeparator(List list, String str) {
         String str2 = "";
         for (Object next : list) {
             if (!TextUtils.isEmpty(str2)) {
@@ -429,13 +429,13 @@ public class CsfdApiUrlHelper {
         return str2;
     }
 
-    public String m6690k() {
+    public String url_messagesSend() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("messages").append("/").append("send");
         return stringBuilder.toString();
     }
 
-    public String m6692l() {
+    public String url_messagesContacts() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(CsfdApiUrlHelper.getBaseApiUrl()).append("/").append("messages").append("/").append("contacts");
         return stringBuilder.toString();
