@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+    <FrameLayout android:id="@id/creator_item_photo_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/xml_bg_photo_selector">
+        <ImageView android:id="@id/creator_item_photo" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary" android:ellipsize="end" android:id="@id/creator_item_name" android:background="@drawable/xml_bg_list_selector" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="2" android:layout_below="@id/creator_item_photo_container" />
+</RelativeLayout>

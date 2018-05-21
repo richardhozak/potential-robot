@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.ListenableProgressItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Csfd.Widget.ProgressItemView">
+    <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/progress_item_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?attr/itemViewPreferredHeight">
+        <ProgressBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/gd_progress_bar" android:indeterminate="true" style="@style/Csfd.Widget.ProgressItemView.ProgressBar" />
+        <TextView android:ellipsize="end" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/gd_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Csfd.Widget.ProgressItemView.Text" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/progress_item_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Csfd.Widget.ProgressItemView.Error">
+        <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/progress_item_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_item_error_text" android:singleLine="true" style="@style/Csfd.Widget.ProgressItemView.Error.Text" />
+        <Button android:id="@id/progress_item_error_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_item_error_button" style="@style/Csfd.Widget.ProgressItemView.Error.Button" />
+    </LinearLayout>
+</cz.csfd.csfdroid.list.itemview.ListenableProgressItemView>

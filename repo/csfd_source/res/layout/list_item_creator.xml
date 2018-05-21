@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.CreatorItemView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView csfd:id="@id/creator_item_photo" style="@style/CreatorItem.Photo" />
+    <ImageView csfd:id="@id/creator_item_shadow" csfd:layout_width="UNKNOWN_DATA_0x7f080069" csfd:layout_height="UNKNOWN_DATA_0x7f08001f" csfd:src="@drawable/item_image_shadow" csfd:layout_toRightOf="@id/creator_item_photo" />
+    <RelativeLayout csfd:padding="7dp" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content" csfd:layout_toRightOf="@id/creator_item_shadow">
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_name" csfd:text="name" style="@style/CreatorItem.Name" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_birth_date_label" csfd:visibility="gone" csfd:text="@string/creator_birth_year_label" csfd:layout_below="@id/creator_item_name" csfd:layout_alignLeft="@id/creator_item_name" style="@style/CreatorItem.BirthDeath.Label" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_birth_date" csfd:visibility="gone" csfd:layout_toRightOf="@id/creator_item_birth_date_label" csfd:layout_below="@id/creator_item_name" style="@style/CreatorItem.BirthDeath" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_birth_place" csfd:visibility="gone" csfd:layout_below="@id/creator_item_birth_date_label" style="@style/CreatorItem.BirthDeath" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_death_date_label" csfd:visibility="gone" csfd:text="@string/creator_death_year_label" csfd:layout_below="@id/creator_item_birth_place" csfd:layout_alignLeft="@id/creator_item_name" style="@style/CreatorItem.BirthDeath.Label" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_death_date" csfd:visibility="gone" csfd:layout_toRightOf="@id/creator_item_death_date_label" csfd:layout_below="@id/creator_item_birth_place" style="@style/CreatorItem.BirthDeath" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_item_death_place" csfd:visibility="gone" csfd:layout_below="@id/creator_item_death_date_label" style="@style/CreatorItem.BirthDeath" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.CreatorItemView>

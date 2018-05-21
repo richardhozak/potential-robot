@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/new_video_shadow" android:paddingLeft="@dimen/padding_shadow" android:paddingTop="@dimen/padding_shadow" android:paddingRight="@dimen/padding_shadow" android:paddingBottom="@dimen/padding_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/movie_poster" android:scaleType="centerCrop" style="@style/MovieInfoPoster" />
+</FrameLayout>

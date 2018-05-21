@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@id/actionbar_avatar" android:layout_width="UNKNOWN_DATA_0x2c01" android:layout_height="UNKNOWN_DATA_0x2c01" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" />
+    <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/actionbar_login" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/menu_login" style="@style/ActionBar.Login" />
+</RelativeLayout>

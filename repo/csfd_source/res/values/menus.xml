@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="charts_menu">res/menu/charts_menu.xml</menu>
+    <menu name="charts_menu">res/menu-v11/charts_menu.xml</menu>
+    <menu name="cinemas_detail_menu">res/menu/cinemas_detail_menu.xml</menu>
+    <menu name="cinemas_detail_menu">res/menu-v11/cinemas_detail_menu.xml</menu>
+    <menu name="cinemas_menu">res/menu/cinemas_menu.xml</menu>
+    <menu name="cinemas_menu">res/menu-v11/cinemas_menu.xml</menu>
+    <menu name="creator_menu">res/menu/creator_menu.xml</menu>
+    <menu name="creator_menu">res/menu-v11/creator_menu.xml</menu>
+    <menu name="home_menu">res/menu/home_menu.xml</menu>
+    <menu name="home_menu">res/menu-v11/home_menu.xml</menu>
+    <menu name="messages_action_mode">res/menu/messages_action_mode.xml</menu>
+    <menu name="movie_menu">res/menu/movie_menu.xml</menu>
+    <menu name="movie_menu">res/menu-v11/movie_menu.xml</menu>
+    <menu name="search_menu">res/menu/search_menu.xml</menu>
+    <menu name="tvtips_menu">res/menu/tvtips_menu.xml</menu>
+    <menu name="tvtips_menu">res/menu-v11/tvtips_menu.xml</menu>
+    <menu name="user_menu">res/menu/user_menu.xml</menu>
+    <menu name="user_menu">res/menu-v11/user_menu.xml</menu>
+    <menu name="video_menu">res/menu/video_menu.xml</menu>
+    <menu name="video_menu">res/menu-v11/video_menu.xml</menu>
+    <menu name="watchlist_menu">res/menu/watchlist_menu.xml</menu>
+    <menu name="watchlist_menu">res/menu-v11/watchlist_menu.xml</menu>
+</resources>

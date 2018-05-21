@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:layout_width="match_parent" csfd:layout_height="match_parent" csfd:fillViewport="true">
+    <LinearLayout csfd:orientation="vertical" csfd:id="@id/container" csfd:background="@color/side_menu_background" csfd:layout_width="match_parent" csfd:layout_height="match_parent">
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_homescreen" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_home" csfd:rowTitle="@string/side_menu_homescreen" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_videos" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_video" csfd:rowTitle="@string/side_menu_videos" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_tvtips" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_tv" csfd:rowTitle="@string/side_menu_tvtips" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_tvschedule" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowTitle="@string/side_menu_tvschedule" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_cinemas" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_cinemas" csfd:rowTitle="@string/side_menu_cinemas" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_bluray" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowTitle="@string/side_menu_bluray" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_dvd" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowTitle="@string/side_menu_dvd" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_charts" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_charts" csfd:rowTitle="@string/side_menu_charts" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_favorites" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_favorites" csfd:rowTitle="@string/side_menu_favorites" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_watchlist" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_watchlist" csfd:rowTitle="@string/side_menu_watchlist" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_messages" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowTitle="@string/side_menu_messages" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_account" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_account" csfd:rowTitle="@string/side_menu_account" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_preferences" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_preferences" csfd:rowTitle="@string/menu_preferences" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_about" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_about" csfd:rowTitle="@string/menu_about" />
+        <View csfd:background="@color/listview_divider" csfd:layout_width="match_parent" csfd:layout_height="UNKNOWN_DATA_0x101" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_login" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_logout" csfd:rowTitle="@string/menu_login" />
+        <cz.csfd.csfdroid.widget.SideNavigationRow csfd:id="@id/side_menu_logout" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:rowIcon="@drawable/ic_side_nav_logout" csfd:rowTitle="@string/menu_logout" />
+    </LinearLayout>
+</ScrollView>

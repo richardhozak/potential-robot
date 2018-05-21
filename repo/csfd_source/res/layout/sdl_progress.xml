@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@c0943e/SDL_Layout_Progress">
+    <ProgressBar android:id="@c0941c/sdl_progress" style="@c0943e/SDL_Progress" />
+    <TextView android:id="@c0941c/sdl_message" style="@c0943e/SDL_TextView_Message_Progress" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@id/dialog_progress_message" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/dialog_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:indeterminate="true" android:indeterminateOnly="true" style="?unknown_attr_ref: 1010077" />
+        <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_no_connection_message" android:layout_alignBaseline="@id/dialog_progress" />
+    </LinearLayout>
+    <Button android:id="@id/dialog_settings_button" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/dialog_no_connection_button_settings" android:layout_below="@id/dialog_progress_message" android:layout_centerHorizontal="true" />
+</RelativeLayout>

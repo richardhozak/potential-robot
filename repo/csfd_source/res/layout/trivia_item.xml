@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.TriviaItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Csfd.Widget.ListView.Item.Padding">
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/trivia_item_text" style="@style/TriviaItem.Text" />
+</cz.csfd.csfdroid.list.itemview.TriviaItemView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.ActivityItemView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView csfd:id="@id/movie_item_poster" style="@style/CreatorItem.Photo" />
+    <ImageView csfd:id="@id/movie_item_shadow" csfd:layout_width="UNKNOWN_DATA_0x7f080069" csfd:layout_height="UNKNOWN_DATA_0x7f08001f" csfd:src="@drawable/item_image_shadow" csfd:layout_toRightOf="@id/movie_item_poster" />
+    <RelativeLayout csfd:padding="7dp" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content" csfd:layout_toRightOf="@id/movie_item_shadow">
+        <LinearLayout csfd:orientation="horizontal" csfd:id="@id/nick_activity" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content">
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/user_nick" style="@style/CommentItem.Nick" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:textSize="15sp" csfd:id="@id/activity_description" csfd:layout_marginLeft="5dp" csfd:layout_marginTop="0dp" csfd:text="" style="@style/MovieItem.Additional" />
+            <ImageView csfd:id="@id/movie_item_rating" csfd:layout_marginLeft="5dp" csfd:layout_marginTop="1dp" style="@style/ChartMovieItem.Rating" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_garbage_rating" csfd:layout_marginLeft="5dp" csfd:layout_marginTop="2dp" csfd:text="@string/rating_garbage" style="@style/ChartMovieItem.GarbageRating" />
+        </LinearLayout>
+        <LinearLayout csfd:orientation="horizontal" csfd:id="@id/movie_item_name_year" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:layout_marginTop="1dp" csfd:layout_marginBottom="3dp" csfd:layout_below="@id/nick_activity">
+            <ImageView csfd:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" csfd:id="@id/movie_item_color" csfd:src="@drawable/movie_item_c0" csfd:scaleType="center" style="@style/MovieItem.Color" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_name" style="@style/MovieItem.Name" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_year" style="@style/MovieItem.Year" />
+        </LinearLayout>
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/rating_date" csfd:text="" csfd:layout_below="@id/movie_item_name_year" style="@style/MovieItem.Additional" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.ActivityItemView>

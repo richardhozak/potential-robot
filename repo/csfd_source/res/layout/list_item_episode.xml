@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.EpisodeItemView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:paddingBottom="4dp" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:minHeight="64dp" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView csfd:id="@id/movie_item_color" csfd:layout_marginLeft="12dp" csfd:src="@drawable/movie_item_c0" csfd:scaleType="center" csfd:layout_centerVertical="true" style="@style/MovieItem.Color" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_name" csfd:paddingRight="0dp" csfd:layout_marginLeft="8dp" csfd:layout_toRightOf="@id/movie_item_color" csfd:layout_centerVertical="true" style="@style/MovieItem.Name" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_code" csfd:layout_marginLeft="5dp" csfd:layout_toRightOf="@id/movie_item_name" csfd:layout_centerVertical="true" style="@style/MovieItem.Year" />
+</cz.csfd.csfdroid.list.itemview.EpisodeItemView>

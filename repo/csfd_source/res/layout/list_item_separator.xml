@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.SeparatorItemView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/separator_text" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/separatorItemViewStyle">
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/separator_title_bold" style="@style/SeparatorItem.Title.Bold" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/separator_title" android:layout_marginLeft="5sp" android:layout_toRightOf="@id/separator_title_bold" style="@style/SeparatorItem.Title" />
+    <ImageView android:id="@id/separator_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_next_item" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</cz.csfd.csfdroid.list.itemview.SeparatorItemView>

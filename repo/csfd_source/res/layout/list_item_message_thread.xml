@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.MessageThreadItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView android:id="@id/thread_item_avatar" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" style="@style/UserAvatar" />
+    <RelativeLayout android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/thread_item_avatar">
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/thread_item_nick" style="@style/MessageThreadItem.Name" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/thread_item_date" android:layout_alignParentRight="true" style="@style/MessageThreadItem.Date" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/thread_item_unread" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_below="@id/thread_item_date" android:layout_alignParentRight="true" style="@style/MessageThreadItem.UnreadCount" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/thread_item_text" android:layout_toLeftOf="@id/thread_item_unread" android:layout_below="@id/thread_item_nick" android:layout_alignParentLeft="true" style="@style/MessageThreadItem.Text" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.MessageThreadItemView>

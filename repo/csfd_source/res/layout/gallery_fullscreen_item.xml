@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/gallery_fullscreen_item_progress" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?unknown_attr_ref: 1010077" />
+    </LinearLayout>
+    <ImageView android:id="@id/gallery_fullscreen_item_picture" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" style="@style/Csfd.Widget.Gallery.Photo" />
+</RelativeLayout>

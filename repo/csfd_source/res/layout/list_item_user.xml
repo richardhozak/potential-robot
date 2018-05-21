@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.UserItemView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView csfd:id="@id/user_item_avatar" csfd:layout_marginLeft="8dp" csfd:layout_marginTop="8dp" csfd:layout_marginRight="8dp" csfd:layout_marginBottom="8dp" style="@style/UserAvatar" />
+    <RelativeLayout csfd:padding="8dp" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content" csfd:layout_toRightOf="@id/user_item_avatar" csfd:layout_centerVertical="true">
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/user_item_nick" style="@style/CreatorItem.Name" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/user_item_name" csfd:layout_below="@id/user_item_nick" style="@style/CreatorItem.AdditionalName" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.UserItemView>

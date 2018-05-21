@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@c0943e/SDL_Layout">
+    <TextView android:id="@c0941c/sdl_title" style="@c0943e/SDL_TextView_Title" />
+    <LinearLayout style="@c0943e/SDL_Layout_Content">
+        <ScrollView android:id="@c0941c/sdl_message_scrollview" style="@c0943e/SDL_ScrollView">
+            <TextView android:id="@c0941c/sdl_message" style="@c0943e/SDL_TextView_Message" />
+        </ScrollView>
+        <FrameLayout android:id="@c0941c/sdl_custom" style="@c0943e/SDL_Layout_Custom" />
+        <ListView android:id="@c0941c/sdl_list" style="@c0943e/SDL_ListView" />
+    </LinearLayout>
+    <View android:id="@c0941c/sdl_button_divider" style="@c0943e/SDL_Divider" />
+    <LinearLayout android:id="@c0941c/sdl_buttons_default" style="@c0943e/SDL_Layout_Buttons">
+        <Button android:id="@c0941c/sdl_button_neutral" style="@c0943e/SDL_Button" />
+        <View style="@c0943e/SDL_Expander" />
+        <Button android:id="@c0941c/sdl_button_negative" style="@c0943e/SDL_Button" />
+        <Button android:id="@c0941c/sdl_button_positive" style="@c0943e/SDL_Button" />
+    </LinearLayout>
+    <LinearLayout android:id="@c0941c/sdl_buttons_stacked" style="@c0943e/SDL_Layout_Buttons_Stacked">
+        <Button android:id="@c0941c/sdl_button_positive_stacked" style="@c0943e/SDL_Button_Stacked" />
+        <Button android:id="@c0941c/sdl_button_negative_stacked" style="@c0943e/SDL_Button_Stacked" />
+        <Button android:id="@c0941c/sdl_button_neutral_stacked" style="@c0943e/SDL_Button_Stacked" />
+    </LinearLayout>
+    <View android:id="@c0941c/sdl_buttons_bottom_space" style="@c0943e/SDL_Space_ButtonsBottom" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_title_color</item>
+    </style>
+    <style name="MovieInfo.Button" parent="@style/MovieInfo">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="MovieInfo.Rating.Button" parent="@style/MovieInfo.Rating">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xml_btn_rating</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="SDL.Button" parent="@style/SDL">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?colorAccent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?sdlButtonBackground</item>
+        <item name="android:paddingLeft">@dimen/grid_2</item>
+        <item name="android:paddingRight">@dimen/grid_2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/grid_9</item>
+        <item name="android:layout_marginLeft">@dimen/grid_1</item>
+        <item name="android:layout_marginRight">@dimen/grid_1</item>
+        <item name="android:minWidth">@dimen/grid_16</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Theme.Csfd" parent="@style/Theme.AppCompat">
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="android:textColorPrimaryInverse">#ff000000</item>
+        <item name="android:galleryItemBackground">@null</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/Csfd.Widget.ListView</item>
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>
+        <item name="android:actionBarItemBackground">@drawable/xml_bg_actionbar_item</item>
+        <item name="itemViewPreferredHeight">@dimen/item_view_height</item>
+        <item name="itemViewPreferredPaddingLeft">@dimen/item_view_padding_left</item>
+        <item name="progressItemViewStyle">@style/Csfd.Widget.ProgressItemView</item>
+        <item name="progressItemViewStyleProgressBar">@style/Csfd.Widget.ProgressItemView.ProgressBar</item>
+        <item name="progressItemViewStyleText">@style/Csfd.Widget.ProgressItemView.Text</item>
+        <item name="separatorItemViewPreferredHeight">@dimen/separator_item_view_height</item>
+        <item name="separatorItemViewStyle">@style/Csfd.Widget.SeparatorItemView</item>
+        <item name="textItemViewStyle">@style/Csfd.Widget.TextItemView</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>
+        <item name="actionBarItemBackground">@drawable/xml_bg_actionbar_item</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
+        <item name="colorPrimary">@color/light_red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/list_item_additional_light</item>
+    </style>
+</resources>

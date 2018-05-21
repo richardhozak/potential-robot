@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@id/movieInfoLayout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MovieInfoHead">
+        <LinearLayout android:orientation="horizontal" android:id="@id/movie_poster_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/list_item_movie_poster" />
+            <FrameLayout android:id="@id/movie_trailer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8dp" />
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="10dp" android:paddingTop="@dimen/margin_vertical" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/movie_poster_container">
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/movie_genre" android:visibility="gone" android:layout_marginBottom="4dp" android:text="" style="@style/MovieInfo.Additional" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/movie_type" android:visibility="gone" android:layout_marginBottom="4dp" android:text="" android:layout_below="@id/movie_genre" style="@style/MovieInfo.Additional" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/movie_origin_year_length" android:visibility="gone" android:layout_marginBottom="4dp" android:text="" android:layout_below="@id/movie_type" style="@style/MovieInfo.Additional" />
+            <LinearLayout android:orientation="vertical" android:id="@id/movie_chart" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@id/movie_origin_year_length" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/movie_plot_container" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" style="?unknown_attr_ref: 101032b">
+        <cz.csfd.csfdroid.widget.LinkifiedTextView android:id="@id/movie_plot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp" style="@style/MovieInfo.Plot" />
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/movie_plot_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_horizontal" android:layout_marginBottom="@dimen/margin_vertical" android:src="@drawable/arrow_expand" android:scaleType="center" />
+        <TextView android:textStyle="italic" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/movie_plot_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/margin_horizontal" android:layout_marginBottom="@dimen/margin_vertical" android:text="@string/more" style="@style/MovieInfo.More" />
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/movie_plot_separator" android:background="@drawable/abc_list_divider_mtrl_alpha" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/episodes_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:layout_marginBottom="-4dp">
+        <Button android:textSize="16sp" android:textColor="@color/text_color_primary_transparent" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/button_prev_episode" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/prev_episode" android:drawableLeft="@drawable/ic_arrow_prev" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+        <Button android:textSize="16sp" android:textColor="@color/text_color_primary_transparent" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/button_next_episode" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/next_episode" android:drawableRight="@drawable/ic_arrow_next" android:textAllCaps="false" style="?unknown_attr_ref: 101032b" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="12dp" android:weightSum="3.0">
+        <Button android:id="@id/button_share" android:text="@string/share" android:layout_weight="1.0" style="@style/MovieInfo.Button.Share" />
+        <Button android:id="@id/button_watchlist" android:text="@string/menu_add_to_watchlist" android:layout_weight="1.0" style="@style/MovieInfo.Button.Watchlist" />
+        <Button android:id="@id/movie_link_web" android:text="@string/web" android:layout_weight="1.0" style="@style/MovieInfo.Button.Web" />
+    </LinearLayout>
+    <cz.csfd.csfdroid.widget.ConfigurableSizeButton android:textStyle="bold" android:id="@id/movie_episodes_btn" android:text="@string/seasons_and_episodes" android:drawableRight="@drawable/ic_action_next_item" style="@style/MovieInfo.SectionLink" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeButton android:id="@id/movie_cinemas_btn" android:visibility="gone" android:text="@string/in_cinemas" android:drawableRight="@drawable/ic_action_next_item_yellow" style="@style/MovieInfo.SectionLink.Highlight" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeButton android:id="@id/movie_tv_btn" android:visibility="gone" android:text="@string/in_tv" style="@style/MovieInfo.SectionLink.Highlight" />
+    <cz.csfd.csfdroid.module.ads.AdBannerView android:id="@id/ad_banner" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

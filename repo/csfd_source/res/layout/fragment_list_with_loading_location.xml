@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <cz.csfd.csfdroid.widget.LoadingView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/location_error_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/location_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_vertical" android:text="@string/loading_error_location" style="@style/TextAppearance.Error" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeButton android:id="@id/location_button_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_no_connection_button_settings" />
+        </LinearLayout>
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textAppearance="@style/TextAppearance.Medium" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020004" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/margin_large" />
+        <ListView android:id="0x102000a" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

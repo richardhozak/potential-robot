@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/loading_progress_panel" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_marginLeft="@dimen/margin_horizontal" android:layout_marginRight="@dimen/margin_horizontal">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" style="?unknown_attr_ref: 1010077" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/loading_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_horizontal" android:text="@string/loading_progress_generic" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/loading_error_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_horizontal" android:layout_marginRight="@dimen/margin_horizontal">
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/loading_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_vertical" android:text="@string/loading_error_generic" style="@style/TextAppearance.Error" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeButton android:id="@id/loading_button_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_button_try_again" />
+    </LinearLayout>
+</LinearLayout>

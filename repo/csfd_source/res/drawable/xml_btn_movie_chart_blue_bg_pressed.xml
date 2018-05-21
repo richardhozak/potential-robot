@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/movie_color_2_shade" />
+    <corners android:radius="@dimen/chart_btn_radius" />
+</shape>

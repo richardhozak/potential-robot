@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@id/about_title" android:text="@string/about_title" style="@style/About.Title" />
+    <TextView android:id="@id/about_version_label" android:layout_marginRight="5dp" android:text="@string/about_version_label" android:layout_toLeftOf="@id/about_version" android:layout_alignBaseline="@id/about_title" style="@style/About.Version" />
+    <TextView android:id="@id/about_version" android:layout_alignBaseline="@id/about_title" android:layout_alignParentRight="true" style="@style/About.Version" />
+    <TextView android:id="@id/about_copyright" android:text="@string/about_copyright" android:layout_below="@id/about_title" style="@style/About.Copyright" />
+    <TextView android:id="@id/about_author" android:text="@string/about_author" android:layout_below="@id/about_copyright" style="@style/About.Author" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/about_author">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/about_text" android:text="@string/about_text" style="@style/About.Text" />
+            <TextView android:id="@id/about_licences_label" android:layout_marginTop="10dp" android:text="@string/about_licences_label" style="@style/About.Label.Secondary" />
+            <TextView android:id="@id/about_licences" style="@style/About.Text.Secondary" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

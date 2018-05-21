@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@id/rating_views" android:background="@color/text_color_inverse_transparent" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:textSize="18sp" android:textStyle="bold" android:textColor="@color/comment_dialog_garbage_notselected_color" android:id="@id/rating_garbage" android:background="@color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginRight="10dp" android:textOn="@string/comment_garbage" android:textOff="@string/comment_garbage" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/rating_garbage_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_garbage" />
+        <cz.csfd.csfdroid.widget.CsfdRatingBar android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:numStars="5" android:rating="0.0" android:stepSize="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Rating.Csfd" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/comment_views" android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:textSize="16sp" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/comment" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/comment_hint" android:maxLines="7" android:minLines="@integer/comment_textfield_lines" android:lineSpacingMultiplier="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+</LinearLayout>

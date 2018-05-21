@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/xml_bg_list_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101004d">
+    <cz.csfd.csfdroid.module.preferences.DragGripView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/drag_handle" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="UNKNOWN_DATA_0x2401" android:layout_height="match_parent" android:color="#6666" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/text" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/cz.csfd.csfdroid">
+    <PreferenceCategory csfd:title="@string/preferences_cat_global">
+        <ListPreference csfd:entries="@array/preferences_text_size_entries" csfd:id="@id/preferences_movie_text_size" csfd:title="@string/preferences_text_size" csfd:key="text_size" csfd:summary="@string/preferences_text_size_desc" csfd:defaultValue="@string/text_default_size" csfd:entryValues="@array/text_sizes" />
+        <com.h6ah4i.android.compat.preference.MultiSelectListPreferenceCompat csfd:entries="@array/preferences_notifications" csfd:id="@id/preferences_notifications" csfd:title="@string/preferences_notifications" csfd:key="notifications" csfd:summary="@string/preferences_notifications_desc" csfd:defaultValue="@array/notifications" csfd:entryValues="@array/notifications" />
+        <CheckBoxPreference csfd:id="@id/preferences_movie_posters" csfd:title="@string/preferences_movie_posters" csfd:key="show_posters" csfd:summary="@string/preferences_movie_posters_desc" csfd:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory csfd:title="@string/preferences_cat_home">
+        <Preference csfd:id="@id/preferences_home_sort" csfd:title="@string/preferences_home_sort" csfd:key="preferences_home_sort" csfd:summary="@string/preferences_home_sort_desc" />
+    </PreferenceCategory>
+    <PreferenceCategory csfd:title="@string/preferences_cat_movie">
+        <ListPreference csfd:entries="@array/preferences_movie_subtitles_size_entries" csfd:id="@id/preferences_movie_subtitles_size" csfd:title="@string/preferences_movie_subtitles_size" csfd:key="subtitles_size" csfd:summary="@string/preferences_movie_subtitles_size_desc" csfd:defaultValue="@string/subtitles_default_size" csfd:entryValues="@array/subtitles_sizes" />
+    </PreferenceCategory>
+    <PreferenceCategory csfd:title="@string/preferences_cat_tv">
+        <Preference csfd:id="@id/preferences_tv_stations" csfd:title="@string/preferences_tv_stations" csfd:key="preferences_tv_stations" csfd:summary="@string/preferences_tv_stations_desc" />
+    </PreferenceCategory>
+    <PreferenceCategory csfd:title="@string/preferences_cat_charts">
+        <Preference csfd:id="@id/preferences_charts_sort" csfd:title="@string/preferences_charts_sort" csfd:key="preferences_charts_sort" csfd:summary="@string/preferences_charts_sort_desc" />
+    </PreferenceCategory>
+</PreferenceScreen>

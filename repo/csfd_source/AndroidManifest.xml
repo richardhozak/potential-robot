@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1508" android:versionName="2.2.3.1508" android:installLocation="auto" package="cz.csfd.csfdroid" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="25" />
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="cz.csfd.csfdroid" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="cz.csfd.csfdroid.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="cz.csfd.csfdroid.permission.C2D_MESSAGE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <permission android:name="cz.csfd.csfdroid.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="cz.csfd.csfdroid.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <application android:theme="@style/Theme.Csfd" android:label="@string/app_name" android:icon="@drawable/icon_android_launcher" android:name="cz.csfd.csfdroid.CsfdApplication" android:description="@string/app_desc" android:allowTaskReparenting="true" android:logo="@drawable/csfd_logo_transparent">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <meta-data android:name="android.app.default_searchable" android:value=".module.search.SearchActivity" />
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+        <activity android:theme="@style/SplashTheme" android:name="cz.csfd.csfdroid.module.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="cz.csfd.csfdroid.module.home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/televize/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/televize/" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cz.csfd.csfdroid.module.home.ReleasesActivity" />
+        <activity android:label="@string/activity_label_search" android:name="cz.csfd.csfdroid.module.search.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+            <intent-filter>
+                <action android:name="cz.csfd.csfdroid.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:path="/search" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/hledat/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/hledat/" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:path="/search" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_label_moviedetails" android:name="cz.csfd.csfdroid.module.movie.MovieDetailsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/film/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/film/" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:pathPrefix="/film/" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cz.csfd.csfdroid.module.movie.MovieCreatorsActivity" />
+        <activity android:label="@string/activity_label_preferences" android:name="cz.csfd.csfdroid.module.preferences.PreferencesActivity" />
+        <activity android:label="@string/activity_label_preferences" android:name="cz.csfd.csfdroid.module.preferences.ChartSortActivity" android:parentActivityName="cz.csfd.csfdroid.module.preferences.PreferencesActivity" />
+        <activity android:label="@string/activity_label_preferences" android:name="cz.csfd.csfdroid.module.preferences.HomeSortActivity" android:parentActivityName="cz.csfd.csfdroid.module.preferences.PreferencesActivity" />
+        <activity android:theme="@style/Theme.Csfd.Dark.Fullscreen" android:label="@string/activity_label_video" android:name="cz.csfd.csfdroid.module.movie.video.VideoActivity" android:screenOrientation="landscape" />
+        <activity android:label="@string/activity_label_creatordetails" android:name="cz.csfd.csfdroid.module.creator.CreatorDetailsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/tvurce/" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/reziser/" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/herec/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/tvurce/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/reziser/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/herec/" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:pathPrefix="/creator/" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Csfd.Fullscreen" android:label="@string/activity_label_moviedetails_gallery" android:name="cz.csfd.csfdroid.module.gallery.FullscreenGalleryActivity" />
+        <activity android:theme="@style/Theme.Csfd.LoginDialog" android:label="OAuth callback" android:name="cz.csfd.csfdroid.oauth.OAuthCallbackActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="csfdroid" android:host="oauth-callback" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_label_cinemas" android:name="cz.csfd.csfdroid.module.cinema.CinemasActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/kino/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/kino/" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+        </activity>
+        <activity android:label="@string/activity_label_cinemadetails" android:name="cz.csfd.csfdroid.module.cinema.CinemaDetailActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="cz.csfd.csfdroid.module.cinema.CinemasActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:pathPrefix="/cinema/" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_label_charts" android:name="cz.csfd.csfdroid.module.chart.ChartsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/zebricky/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/zebricky/" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+        </activity>
+        <activity android:label="@string/activity_label_user" android:name="cz.csfd.csfdroid.module.user.UserDetailActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.csfd.cz" android:pathPrefix="/uzivatel/" />
+                <data android:scheme="https" android:host="www.csfd.cz" android:pathPrefix="/uzivatel/" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:pathPrefix="/user/" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_label_user" android:name="cz.csfd.csfdroid.module.user.RatingsActivity" />
+        <activity android:label="@string/activity_label_user" android:name="cz.csfd.csfdroid.module.user.FanclubsActivity" />
+        <activity android:label="@string/activity_label_favorites" android:name="cz.csfd.csfdroid.module.favorites.FavoritesActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+        </activity>
+        <activity android:label="@string/activity_label_favorites" android:name="cz.csfd.csfdroid.module.watchlist.WatchlistActivity" />
+        <activity android:label="@string/activity_label_tvstations" android:name="cz.csfd.csfdroid.module.tvtips.TvStationsActivity" />
+        <activity android:label="@string/activity_label_tvschedule" android:name="cz.csfd.csfdroid.module.tvschedule.TvScheduleStationActivity" />
+        <activity android:label="@string/side_menu_messages" android:name="cz.csfd.csfdroid.module.messages.MessagesThreadActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".module.home.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="csfdroid" android:host="csfd.cz" android:pathPrefix="/messages/" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_label_contacts" android:name="cz.csfd.csfdroid.module.messages.ContactsActivity" />
+        <activity android:label="@string/seasons_and_episodes" android:name="cz.csfd.csfdroid.module.series.SeasonsActivity" />
+        <provider android:name="cz.csfd.csfdroid.data.store.CsfdroidProvider" android:enabled="true" android:exported="false" android:authorities="cz.csfd.csfdroid" />
+        <provider android:name="cz.csfd.csfdroid.data.store.cache.PersistentCacheProvider" android:enabled="true" android:exported="false" android:authorities="cz.csfd.csfdroid.cache" />
+        <service android:name="cz.csfd.csfdroid.oauth.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <service android:name="cz.csfd.csfdroid.net.queue.RequestService" android:exported="false" />
+        <meta-data android:name="io.fabric.ApiKey" android:value="fcbe2f5a5f39a8197f92386ddad5dcfada15bdc1" />
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false" />
+        <activity android:theme="@style/Theme_IAPTheme" android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
+        <meta-data android:name="onesignal_app_id" android:value="f351cedc-6df6-4d9e-90aa-7c3fef52c810" />
+        <meta-data android:name="onesignal_google_project_number" android:value="str:REMOTE" />
+        <receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="cz.csfd.csfdroid" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+        <service android:name="com.onesignal.GcmIntentService" />
+        <service android:name="com.onesignal.GcmIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.onesignal.SyncService" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.onesignal.PermissionsActivity" />
+        <service android:name="com.onesignal.NotificationRestoreService" />
+        <service android:name="com.onesignal.NotificationRestoreJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver android:name="com.onesignal.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+    </application>
+</manifest>

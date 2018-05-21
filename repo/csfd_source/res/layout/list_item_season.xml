@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.SeasonItemView xmlns:android="http://schemas.android.com/apk/res-auto" csfd:gravity="top|bottom|center_vertical|fill_vertical|center|fill" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView csfd:id="@id/movie_item_poster" csfd:defaultSrc="@drawable/creator_photo_blank" style="@style/CreatorItem.Photo" />
+    <ImageView csfd:id="@id/movie_item_shadow" csfd:layout_width="UNKNOWN_DATA_0x7f080069" csfd:layout_height="UNKNOWN_DATA_0x7f08001f" csfd:src="@drawable/item_image_shadow" csfd:layout_toRightOf="@id/movie_item_poster" />
+    <RelativeLayout csfd:paddingLeft="7dp" csfd:paddingTop="5dp" csfd:paddingRight="7dp" csfd:paddingBottom="8dp" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content" csfd:layout_toRightOf="@id/movie_item_shadow" csfd:layout_centerVertical="true">
+        <LinearLayout csfd:orientation="horizontal" csfd:id="@id/movie_item_name_year" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" csfd:layout_marginBottom="3dp">
+            <ImageView csfd:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" csfd:id="@id/movie_item_color" csfd:src="@drawable/movie_item_c0" csfd:scaleType="center" style="@style/MovieItem.Color" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_name" style="@style/MovieItem.Name" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_year" style="@style/MovieItem.Year" />
+        </LinearLayout>
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/movie_item_episodes" csfd:layout_marginBottom="4dp" csfd:layout_below="@id/movie_item_name_year" style="@style/MovieItem.Additional" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.SeasonItemView>

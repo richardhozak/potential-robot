@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Spinner android:id="@id/video_resolution_chooser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_vertical" android:layout_marginRight="@dimen/margin_horizontal" android:layout_alignLeft="@id/video_subtitles_chooser" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <Spinner android:id="@id/video_subtitles_chooser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_vertical" android:layout_marginRight="@dimen/margin_horizontal" android:layout_below="@id/video_resolution_chooser" android:layout_alignParentRight="true" />
+    <Button android:id="@id/video_button_ad_skip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_horizontal" android:layout_marginBottom="@dimen/margin_vertical" android:text="@string/video_ad_skip" android:layout_above="@id/video_controls_container" android:layout_alignParentRight="true" />
+    <Button android:id="@id/video_button_ad_url" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_horizontal" android:layout_marginBottom="@dimen/margin_vertical" android:text="@string/video_ad_url" android:layout_above="@id/video_controls_container" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_controls_container" android:background="@color/panel_alpha_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/prev" style="@*style/MediaButton.Previous" />
+            <ImageButton android:id="@id/rew" style="@*style/MediaButton.Rew" />
+            <ImageButton android:id="@id/pause" style="@*style/MediaButton.Play" />
+            <ImageButton android:id="@id/ffwd" style="@*style/MediaButton.Ffwd" />
+            <ImageButton android:id="@id/next" style="@*style/MediaButton.Next" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="0x106000b" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/time_current" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <SeekBar android:id="@id/mediacontroller_progress" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x2001" android:layout_weight="1.0" style="?unknown_attr_ref: 1010078" />
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="0x106000b" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/time" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

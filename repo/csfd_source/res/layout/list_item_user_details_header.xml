@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@id/user_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/user_background_overlay" android:background="@color/dark_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/avatar" android:layout_width="UNKNOWN_DATA_0x7f080060" android:layout_height="UNKNOWN_DATA_0x7f080060" android:layout_marginTop="16dp" android:layout_centerHorizontal="true" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/user_nick" android:layout_marginTop="12dp" android:layout_below="@id/avatar" style="@style/UserDetails.Name" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/user_additional_info" android:layout_marginTop="6dp" android:layout_marginBottom="16dp" android:layout_below="@id/user_nick" style="@style/UserDetails.Additional" />
+    <LinearLayout android:id="@id/user_buttons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:weightSum="2.0" android:layout_below="@id/user_additional_info">
+        <Button android:id="@id/button_favorite" android:text="@string/menu_add_to_favorites" android:layout_weight="1.0" style="@style/CinemaDetail.Button.Favorites" />
+        <Button android:id="@id/button_message" android:text="@string/menu_send_message" android:layout_weight="1.0" style="@style/CinemaDetail.Button.Map" />
+    </LinearLayout>
+</RelativeLayout>

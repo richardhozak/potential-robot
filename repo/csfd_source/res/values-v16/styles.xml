@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SeparatorItem.Title" parent="@style/SeparatorItem">
+        <item name="android:textAppearance">@style/TextAppearance.Separator</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="SeparatorItem.Title.Bold" parent="@style/SeparatorItem.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_primary_transparent</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="SideMenuItem.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="UserDetails.Additional" parent="@style/UserDetails">
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

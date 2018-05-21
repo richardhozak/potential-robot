@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@id/movie_head" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View style="@style/HeaderShadow" />
+        <RelativeLayout android:id="@id/movie_head_info" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/movie_name_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@id/rating_container" android:layout_alignParentLeft="true">
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:ellipsize="end" android:id="@id/movie_name" android:focusable="false" android:maxLines="2" style="@style/MovieInfo.Name" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/movie_original_name_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@id/rating_container" android:layout_below="@id/movie_name_container" android:layout_alignParentLeft="true">
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:ellipsize="end" android:id="@id/movie_original_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/MovieInfo.OriginalName" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/movie_rating" android:focusable="false" android:layout_marginRight="10dp" style="@style/MovieInfo.Rating" />
+                <Button android:id="@id/button_rate" android:visibility="gone" android:text="@string/rate" style="@style/MovieInfo.Rating.Button" />
+                <cz.csfd.csfdroid.widget.CsfdRatingBar android:id="@id/rating_bar" android:visibility="gone" android:layout_marginRight="10dp" style="@style/MovieInfo.Rating.Bar" />
+                <cz.csfd.csfdroid.widget.CsfdRatingBar android:id="@id/rating_bar_computed" android:visibility="gone" android:layout_marginRight="10dp" android:progressDrawable="@drawable/rating_star_indicator_empty" style="@style/MovieInfo.Rating.Bar" />
+                <TextView android:id="@id/rating_garbage" android:visibility="gone" android:layout_marginRight="10dp" android:text="@string/rating_garbage" style="@style/MovieInfo.Rating.Garbage" />
+            </LinearLayout>
+        </RelativeLayout>
+        <cz.csfd.csfdroid.widget.slidingtabs.SlidingTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/movie_head_info" style="@style/MovieInfo.SlidingTabLayout" />
+    </RelativeLayout>
+    <cz.csfd.csfdroid.widget.BetterViewPager android:id="@id/movie_detail_view_pager" android:nextFocusUp="@id/tabs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ad_bottom_bg" android:layout_below="@id/movie_head" />
+    <FrameLayout android:id="@id/ad_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <cz.csfd.csfdroid.module.ads.AdBottomView android:id="@id/ad_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/ad_bottom_close" android:layout_alignTop="@id/ad_bottom" style="@style/AdCloseButton" />
+</RelativeLayout>

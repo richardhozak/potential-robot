@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.CommentItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Csfd.Widget.ListView.Item.Padding">
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/comment_item_nick" style="@style/CommentItem.Nick" />
+    <ImageView android:id="@id/comment_item_rating" android:layout_toRightOf="@id/comment_item_nick" android:layout_alignTop="@id/comment_item_nick" style="@style/CommentItem.Rating" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/comment_item_garbage_rating" android:text="@string/rating_garbage" android:layout_toRightOf="@id/comment_item_nick" android:layout_alignBaseline="@id/comment_item_nick" style="@style/CommentItem.GarbageRating" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/comment_item_text" android:layout_below="@id/comment_item_nick" style="@style/CommentItem.Text" />
+</cz.csfd.csfdroid.list.itemview.CommentItemView>

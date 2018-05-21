@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="days_in_week_akuzativ">
+        <item>neděli</item>
+        <item>pondělí</item>
+        <item>úterý</item>
+        <item>středu</item>
+        <item>čtvrtek</item>
+        <item>pátek</item>
+        <item>sobotu</item>
+    </array>
+    <array name="notifications">
+        <item>messages</item>
+        <item>watchlist</item>
+    </array>
+    <array name="preferences_movie_subtitles_size_entries">
+        <item>Malé</item>
+        <item>Střední</item>
+        <item>Velké</item>
+        <item>Velmi velké</item>
+    </array>
+    <array name="preferences_notifications">
+        <item>Zprávy</item>
+        <item>Chci vidět</item>
+    </array>
+    <array name="preferences_text_size_entries">
+        <item>Malé</item>
+        <item>Střední</item>
+        <item>Velké</item>
+        <item>Velmi velké</item>
+    </array>
+    <array name="subtitles_sizes">
+        <item>18</item>
+        <item>22</item>
+        <item>26</item>
+        <item>30</item>
+    </array>
+    <array name="text_sizes">
+        <item>0.8f</item>
+        <item>1f</item>
+        <item>1.2f</item>
+        <item>1.4f</item>
+    </array>
+</resources>

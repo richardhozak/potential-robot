@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/separator_background" android:paddingLeft="@dimen/margin_horizontal" android:paddingTop="@dimen/margin_vertical" android:paddingRight="@dimen/margin_horizontal" android:paddingBottom="@dimen/margin_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MovieInfoHead">
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary" android:id="@id/location" android:paddingLeft="@dimen/margin_horizontal" android:layout_alignParentLeft="true" style="@style/CinemaItem.Location" />
+</RelativeLayout>

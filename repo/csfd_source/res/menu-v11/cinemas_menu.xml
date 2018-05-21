@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_search" android:id="@id/menu_item_search" android:orderInCategory="0" android:title="@string/menu_search" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_calendar" android:id="@id/menu_item_date" android:orderInCategory="1" android:title="@string/menu_date" android:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/menu_item_date_today" android:title="@string/menu_date_today" />
+                <item android:id="@id/menu_item_date_tomorrow" android:title="@string/menu_date_tomorrow" />
+                <item android:id="@id/menu_item_date_weekend" android:title="@string/menu_date_weekend" />
+                <item android:id="@id/menu_item_date_week" android:title="@string/menu_date_week" />
+                <item android:id="@id/menu_item_date_month" android:title="@string/menu_date_month" />
+                <item android:id="@id/menu_item_date_all" android:title="@string/menu_date_all" />
+            </group>
+        </menu> />
+    <item android:id="@id/menu_item_cinemas_without_schedule" android:orderInCategory="2" android:title="@string/cinemas_without_schedule" android:checkable="true" android:showAsAction="UNKNOWN_DATA_0x0" />
+    <item android:id="@id/menu_item_login" android:orderInCategory="3" android:title="@string/menu_login" android:showAsAction="UNKNOWN_DATA_0x0" />
+    <item android:id="@id/menu_item_preferences" android:orderInCategory="4" android:title="@string/menu_preferences" android:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

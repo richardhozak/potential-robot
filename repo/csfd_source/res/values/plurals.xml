@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="point_count">
+        <item quantity="other">%d bodů</item>
+        <item quantity="one">%d bod</item>
+        <item quantity="few">%d body</item>
+    </plurals>
+    <plurals name="x_episodes">
+        <item quantity="other">%d epizod</item>
+        <item quantity="one">%d epizoda</item>
+        <item quantity="few">%d epizody</item>
+    </plurals>
+</resources>

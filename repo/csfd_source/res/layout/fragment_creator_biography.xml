@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" csfd:id="@id/fragment_content" csfd:layout_width="match_parent" csfd:layout_height="match_parent">
+    <cz.csfd.csfdroid.widget.LoadingView csfd:id="@id/loading" csfd:visibility="gone" csfd:layout_width="match_parent" csfd:layout_height="match_parent" />
+    <ScrollView csfd:id="@id/creator_biography_content" csfd:visibility="gone" csfd:layout_width="match_parent" csfd:layout_height="match_parent">
+        <LinearLayout csfd:orientation="vertical" csfd:descendantFocusability="blocksDescendants" csfd:layout_width="match_parent" csfd:layout_height="wrap_content">
+            <RelativeLayout csfd:id="@id/creatorInfoLayout" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" style="@style/CreatorInfoHead">
+                <cz.csfd.csfdroid.gd.widget.AsyncImageView csfd:id="@id/creator_photo" csfd:defaultSrc="@drawable/creator_photo_blank" style="@style/CreatorInfoPhoto" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_type" csfd:visibility="gone" csfd:layout_toRightOf="@id/creator_photo" style="@style/CreatorInfo.Text" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_birth_date_label" csfd:visibility="gone" csfd:text="@string/creator_birth_year_label" csfd:layout_toRightOf="@id/creator_photo" csfd:layout_below="@id/creator_type" style="@style/CreatorInfo.Label" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_birth_date" csfd:visibility="gone" csfd:layout_toRightOf="@id/creator_birth_date_label" csfd:layout_below="@id/creator_type" style="@style/CreatorInfo.Text" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_birth_place" csfd:layout_toRightOf="@id/creator_photo" csfd:layout_below="@id/creator_birth_date" style="@style/CreatorInfo.Text" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_death_date_label" csfd:visibility="gone" csfd:text="@string/creator_death_year_label" csfd:layout_toRightOf="@id/creator_photo" csfd:layout_below="@id/creator_birth_place" style="@style/CreatorInfo.Label" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_death_date" csfd:visibility="gone" csfd:layout_toRightOf="@id/creator_death_date_label" csfd:layout_below="@id/creator_birth_place" style="@style/CreatorInfo.Text" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_death_place" csfd:layout_toRightOf="@id/creator_photo" csfd:layout_below="@id/creator_death_date" style="@style/CreatorInfo.Text" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:textColor="@color/movieinfo_label" csfd:id="@id/creator_copyright" csfd:layout_toRightOf="@id/creator_photo" csfd:layout_below="@id/creator_death_place" style="@style/CreatorInfo.Text" />
+            </RelativeLayout>
+            <cz.csfd.csfdroid.module.ads.AdBannerView csfd:id="@id/ad_banner" csfd:layout_width="match_parent" csfd:layout_height="wrap_content" />
+            <RelativeLayout csfd:layout_width="match_parent" csfd:layout_height="match_parent">
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView csfd:id="@id/creator_biography" csfd:layout_width="wrap_content" csfd:layout_height="wrap_content" style="@style/CreatorInfo.Biography" />
+            </RelativeLayout>
+            <cz.csfd.csfdroid.widget.ConfigurableSizeButton csfd:id="@id/creator_link_web" csfd:text="@string/show_on_web" csfd:drawableRight="@drawable/ic_action_next_item" style="@style/MovieInfo.SectionLink.Light" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

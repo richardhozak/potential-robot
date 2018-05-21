@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cz.csfd.csfdroid.widget.slidingtabs.SlidingTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/container_ad_banner" style="@style/SlidingTabLayout" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_above="@id/ad_bottom_bg" android:layout_below="@id/tabs" />
+    <cz.csfd.csfdroid.widget.LoadingView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/ad_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <cz.csfd.csfdroid.module.ads.AdBottomView android:id="@id/ad_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/ad_bottom_close" android:layout_alignTop="@id/ad_bottom" style="@style/AdCloseButton" />
+</RelativeLayout>

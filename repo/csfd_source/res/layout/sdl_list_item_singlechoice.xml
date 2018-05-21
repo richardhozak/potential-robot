@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avast.android.dialogs.util.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@c0943e/SDL_ListItem">
+    <RadioButton style="@c0943e/SDL_ListItemControl" />
+    <TextView android:id="@c0941c/sdl_text" style="@c0943e/SDL_TextView_MultiChoice" />
+</com.avast.android.dialogs.util.CheckableLinearLayout>

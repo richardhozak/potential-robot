@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_appName"
+        CSFD />
+    <string name="ga_trackingId"
+        UA-27074365-1 />
+    <integer name="ga_dispatchPeriod"
+        1800 />
+    <bool name="ga_dryRun"
+        false />
+</resources>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="action_bar_spinner" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="actionbar_compat" />
+    <item type="id" name="actionbar_compat_item_refresh" />
+    <item type="id" name="actionbar_compat_item_refresh_progress" />
+    <item type="id" name="actionbar_compat_title" />
+    <item type="id" name="actionbar_info" />
+    <item type="id" name="actionbar_refresh" />
+    <item type="id" name="actionbar_search" />
+    <item type="id" name="actionbar_share" />
+    <item type="id" name="drag_handle" />
+    <item type="id" name="fragment_list_comments_empty" />
+    <item type="id" name="fragment_list_creators_empty" />
+    <item type="id" name="fragment_list_filmography_empty" />
+    <item type="id" name="fragment_list_gallery_empty" />
+    <item type="id" name="home" />
+    <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="menu_item_about" />
+    <item type="id" name="menu_item_cinemas" />
+    <item type="id" name="menu_item_cinemas_without_schedule" />
+    <item type="id" name="menu_item_date" />
+    <item type="id" name="menu_item_date_all" />
+    <item type="id" name="menu_item_date_month" />
+    <item type="id" name="menu_item_date_today" />
+    <item type="id" name="menu_item_date_tomorrow" />
+    <item type="id" name="menu_item_date_week" />
+    <item type="id" name="menu_item_date_weekend" />
+    <item type="id" name="menu_item_login" />
+    <item type="id" name="menu_item_map" />
+    <item type="id" name="menu_item_preferences" />
+    <item type="id" name="menu_item_refresh" />
+    <item type="id" name="menu_item_refresh_progress" />
+    <item type="id" name="menu_item_save" />
+    <item type="id" name="menu_item_search" />
+    <item type="id" name="menu_item_sort" />
+    <item type="id" name="menu_item_sort_rating" />
+    <item type="id" name="menu_item_sort_time" />
+    <item type="id" name="menu_item_stations" />
+    <item type="id" name="menu_item_web" />
+    <item type="id" name="menu_refresh" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="split_action_bar" />
+    <item type="id" name="transition_current_scene" />
+    <item type="id" name="transition_scene_layoutid_cache" />
+    <item type="id" name="up" />
+    <item type="id" name="view_offset_helper" />
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="buttonPanel">false</item>
+    <item type="id" name="spacer">false</item>
+    <item type="id" name="parentPanel">false</item>
+    <item type="id" name="topPanel">false</item>
+    <item type="id" name="title_template">false</item>
+    <item type="id" name="alertTitle">false</item>
+    <item type="id" name="contentPanel">false</item>
+    <item type="id" name="scrollIndicatorUp">false</item>
+    <item type="id" name="scrollView">false</item>
+    <item type="id" name="textSpacerNoButtons">false</item>
+    <item type="id" name="scrollIndicatorDown">false</item>
+    <item type="id" name="customPanel">false</item>
+    <item type="id" name="custom">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="submenuarrow">false</item>
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_mode_bar_stub">false</item>
+    <item type="id" name="action_mode_bar">false</item>
+    <item type="id" name="decor_content_parent">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="about_title">false</item>
+    <item type="id" name="about_version_label">false</item>
+    <item type="id" name="about_version">false</item>
+    <item type="id" name="about_copyright">false</item>
+    <item type="id" name="about_author">false</item>
+    <item type="id" name="about_text">false</item>
+    <item type="id" name="about_licences_label">false</item>
+    <item type="id" name="about_licences">false</item>
+    <item type="id" name="actionbar_drawer_button">false</item>
+    <item type="id" name="actionbar_notification_count">false</item>
+    <item type="id" name="actionbar_logo_container">false</item>
+    <item type="id" name="actionbar_logo">false</item>
+    <item type="id" name="actionbar_searchview">false</item>
+    <item type="id" name="actionbar_avatar">false</item>
+    <item type="id" name="actionbar_login">false</item>
+    <item type="id" name="splash_banner_container">false</item>
+    <item type="id" name="splash_banner">false</item>
+    <item type="id" name="drawer_layout">false</item>
+    <item type="id" name="content">false</item>
+    <item type="id" name="drawer_fragment">false</item>
+    <item type="id" name="rating_views">false</item>
+    <item type="id" name="rating_garbage">false</item>
+    <item type="id" name="rating_garbage_checkbox">false</item>
+    <item type="id" name="rating_bar">false</item>
+    <item type="id" name="comment_views">false</item>
+    <item type="id" name="comment">false</item>
+    <item type="id" name="comment_item_nick">false</item>
+    <item type="id" name="comment_item_rating">false</item>
+    <item type="id" name="comment_item_garbage_rating">false</item>
+    <item type="id" name="comment_item_text">false</item>
+    <item type="id" name="smallLabel">false</item>
+    <item type="id" name="largeLabel">false</item>
+    <item type="id" name="touch_outside">false</item>
+    <item type="id" name="design_bottom_sheet">false</item>
+    <item type="id" name="snackbar_text">false</item>
+    <item type="id" name="snackbar_action">false</item>
+    <item type="id" name="navigation_header_container">false</item>
+    <item type="id" name="design_navigation_view">false</item>
+    <item type="id" name="design_menu_item_text">false</item>
+    <item type="id" name="design_menu_item_action_area_stub">false</item>
+    <item type="id" name="design_menu_item_action_area">false</item>
+    <item type="id" name="text_input_password_toggle">false</item>
+    <item type="id" name="dialog_progress_message">false</item>
+    <item type="id" name="dialog_progress">false</item>
+    <item type="id" name="dialog_message">false</item>
+    <item type="id" name="container_ad_banner">false</item>
+    <item type="id" name="tabs">false</item>
+    <item type="id" name="charts_pager">false</item>
+    <item type="id" name="ad_bottom_bg">false</item>
+    <item type="id" name="loading">false</item>
+    <item type="id" name="ad_bottom">false</item>
+    <item type="id" name="filter">false</item>
+    <item type="id" name="filter_cancel">false</item>
+    <item type="id" name="movie">false</item>
+    <item type="id" name="cinemas_pager">false</item>
+    <item type="id" name="search_container">false</item>
+    <item type="id" name="search_field">false</item>
+    <item type="id" name="overlay_container">false</item>
+    <item type="id" name="fragment_content">false</item>
+    <item type="id" name="creator_biography_content">false</item>
+    <item type="id" name="creatorInfoLayout">false</item>
+    <item type="id" name="creator_photo">false</item>
+    <item type="id" name="creator_type">false</item>
+    <item type="id" name="creator_birth_date_label">false</item>
+    <item type="id" name="creator_birth_date">false</item>
+    <item type="id" name="creator_birth_place">false</item>
+    <item type="id" name="creator_death_date_label">false</item>
+    <item type="id" name="creator_death_date">false</item>
+    <item type="id" name="creator_death_place">false</item>
+    <item type="id" name="creator_copyright">false</item>
+    <item type="id" name="ad_banner">false</item>
+    <item type="id" name="creator_biography">false</item>
+    <item type="id" name="creator_link_web">false</item>
+    <item type="id" name="creator_head">false</item>
+    <item type="id" name="creator_name_scroll">false</item>
+    <item type="id" name="creator_name">false</item>
+    <item type="id" name="creator_detail_view_pager">false</item>
+    <item type="id" name="container">false</item>
+    <item type="id" name="side_menu_homescreen">false</item>
+    <item type="id" name="side_menu_videos">false</item>
+    <item type="id" name="side_menu_tvtips">false</item>
+    <item type="id" name="side_menu_tvschedule">false</item>
+    <item type="id" name="side_menu_cinemas">false</item>
+    <item type="id" name="side_menu_bluray">false</item>
+    <item type="id" name="side_menu_dvd">false</item>
+    <item type="id" name="side_menu_charts">false</item>
+    <item type="id" name="side_menu_favorites">false</item>
+    <item type="id" name="side_menu_watchlist">false</item>
+    <item type="id" name="side_menu_messages">false</item>
+    <item type="id" name="side_menu_account">false</item>
+    <item type="id" name="side_menu_preferences">false</item>
+    <item type="id" name="side_menu_about">false</item>
+    <item type="id" name="side_menu_login">false</item>
+    <item type="id" name="side_menu_logout">false</item>
+    <item type="id" name="header">false</item>
+    <item type="id" name="location_error_panel">false</item>
+    <item type="id" name="location_error_text">false</item>
+    <item type="id" name="location_button_settings">false</item>
+    <item type="id" name="fab">false</item>
+    <item type="id" name="container_reply">false</item>
+    <item type="id" name="message">false</item>
+    <item type="id" name="button_send">false</item>
+    <item type="id" name="movie_head">false</item>
+    <item type="id" name="movie_head_info">false</item>
+    <item type="id" name="movie_name_container">false</item>
+    <item type="id" name="rating_container">false</item>
+    <item type="id" name="movie_name">false</item>
+    <item type="id" name="movie_original_name_container">false</item>
+    <item type="id" name="movie_original_name">false</item>
+    <item type="id" name="movie_rating">false</item>
+    <item type="id" name="button_rate">false</item>
+    <item type="id" name="rating_bar_computed">false</item>
+    <item type="id" name="movie_detail_view_pager">false</item>
+    <item type="id" name="ad_bottom_close">false</item>
+    <item type="id" name="search_view_pager">false</item>
+    <item type="id" name="pager">false</item>
+    <item type="id" name="video_container">false</item>
+    <item type="id" name="video_view">false</item>
+    <item type="id" name="video_progressbar">false</item>
+    <item type="id" name="video_subtitles">false</item>
+    <item type="id" name="video_copyright">false</item>
+    <item type="id" name="RelativeLayout01">false</item>
+    <item type="id" name="gallery_fullscreen_gallery">false</item>
+    <item type="id" name="gallery_fullscreen_progress">false</item>
+    <item type="id" name="gallery_fullscreen_progress_bar">false</item>
+    <item type="id" name="copyright">false</item>
+    <item type="id" name="gallery_fullscreen_item_progress">false</item>
+    <item type="id" name="gallery_fullscreen_item_picture">false</item>
+    <item type="id" name="gallery_item_picture">false</item>
+    <item type="id" name="actionbar_cancel">false</item>
+    <item type="id" name="actionbar_done">false</item>
+    <item type="id" name="movie_item_poster">false</item>
+    <item type="id" name="movie_item_shadow">false</item>
+    <item type="id" name="nick_activity">false</item>
+    <item type="id" name="user_nick">false</item>
+    <item type="id" name="activity_description">false</item>
+    <item type="id" name="movie_item_rating">false</item>
+    <item type="id" name="movie_item_garbage_rating">false</item>
+    <item type="id" name="movie_item_name_year">false</item>
+    <item type="id" name="movie_item_color">false</item>
+    <item type="id" name="movie_item_name">false</item>
+    <item type="id" name="movie_item_year">false</item>
+    <item type="id" name="rating_date">false</item>
+    <item type="id" name="gd_text">false</item>
+    <item type="id" name="movie_item_position">false</item>
+    <item type="id" name="movie_item_search_name">false</item>
+    <item type="id" name="movie_item_genre">false</item>
+    <item type="id" name="movie_item_rating_average_count">false</item>
+    <item type="id" name="movie_item_rating_average">false</item>
+    <item type="id" name="movie_item_rating_count">false</item>
+    <item type="id" name="cinema_item_poster">false</item>
+    <item type="id" name="cinema_item_shadow">false</item>
+    <item type="id" name="cinema_item_bearing_distance">false</item>
+    <item type="id" name="cinema_item_bearing">false</item>
+    <item type="id" name="cinema_item_distance">false</item>
+    <item type="id" name="cinema_item_favourite">false</item>
+    <item type="id" name="cinema_item_name">false</item>
+    <item type="id" name="cinema_item_address">false</item>
+    <item type="id" name="cinema_item_schedule">false</item>
+    <item type="id" name="cinema_name">false</item>
+    <item type="id" name="cinema_address">false</item>
+    <item type="id" name="cinema_phone">false</item>
+    <item type="id" name="cinema_email">false</item>
+    <item type="id" name="cinema_web">false</item>
+    <item type="id" name="button_favorite">false</item>
+    <item type="id" name="button_map">false</item>
+    <item type="id" name="cinema_filter">false</item>
+    <item type="id" name="movie_item_type">false</item>
+    <item type="id" name="movie_item_showtimes">false</item>
+    <item type="id" name="movie_item_projection_type">false</item>
+    <item type="id" name="showtime">false</item>
+    <item type="id" name="location">false</item>
+    <item type="id" name="creator_item_photo">false</item>
+    <item type="id" name="creator_item_shadow">false</item>
+    <item type="id" name="creator_item_name">false</item>
+    <item type="id" name="creator_item_birth_date_label">false</item>
+    <item type="id" name="creator_item_birth_date">false</item>
+    <item type="id" name="creator_item_birth_place">false</item>
+    <item type="id" name="creator_item_death_date_label">false</item>
+    <item type="id" name="creator_item_death_date">false</item>
+    <item type="id" name="creator_item_death_place">false</item>
+    <item type="id" name="creator_item_photo_container">false</item>
+    <item type="id" name="movie_item_code">false</item>
+    <item type="id" name="message_bubble">false</item>
+    <item type="id" name="message_item_text">false</item>
+    <item type="id" name="message_item_image">false</item>
+    <item type="id" name="message_item_date">false</item>
+    <item type="id" name="thread_item_avatar">false</item>
+    <item type="id" name="thread_item_nick">false</item>
+    <item type="id" name="thread_item_date">false</item>
+    <item type="id" name="thread_item_unread">false</item>
+    <item type="id" name="thread_item_text">false</item>
+    <item type="id" name="movie_item_type_genre">false</item>
+    <item type="id" name="movie_item_origin">false</item>
+    <item type="id" name="movie_item_tv_programm_container">false</item>
+    <item type="id" name="movie_item_tv_programm_time">false</item>
+    <item type="id" name="movie_item_tv_programm_station">false</item>
+    <item type="id" name="movie_item_release_date">false</item>
+    <item type="id" name="movie_item_additional">false</item>
+    <item type="id" name="movie_poster">false</item>
+    <item type="id" name="video_thumbnail_container">false</item>
+    <item type="id" name="video_thumbnail">false</item>
+    <item type="id" name="video_name">false</item>
+    <item type="id" name="new_videos_viewpager">false</item>
+    <item type="id" name="new_video_thumbnail">false</item>
+    <item type="id" name="new_video_color">false</item>
+    <item type="id" name="new_video_name">false</item>
+    <item type="id" name="new_video_movie_name">false</item>
+    <item type="id" name="new_video_description">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="gd_progress_bar">false</item>
+    <item type="id" name="movie_item_episodes">false</item>
+    <item type="id" name="separator_text">false</item>
+    <item type="id" name="separator_title_bold">false</item>
+    <item type="id" name="separator_title">false</item>
+    <item type="id" name="separator_arrow">false</item>
+    <item type="id" name="movie_item_showtime">false</item>
+    <item type="id" name="movie_item_progress">false</item>
+    <item type="id" name="station_item_logo">false</item>
+    <item type="id" name="station_item_name">false</item>
+    <item type="id" name="station_item_checkbox">false</item>
+    <item type="id" name="user_item_avatar">false</item>
+    <item type="id" name="user_item_nick">false</item>
+    <item type="id" name="user_item_name">false</item>
+    <item type="id" name="user_background">false</item>
+    <item type="id" name="user_background_overlay">false</item>
+    <item type="id" name="avatar">false</item>
+    <item type="id" name="user_additional_info">false</item>
+    <item type="id" name="user_buttons">false</item>
+    <item type="id" name="button_message">false</item>
+    <item type="id" name="user_section">false</item>
+    <item type="id" name="video_item_thumbnail_container">false</item>
+    <item type="id" name="video_item_thumbnail">false</item>
+    <item type="id" name="video_item_movie">false</item>
+    <item type="id" name="video_item_name">false</item>
+    <item type="id" name="video_resolution_chooser">false</item>
+    <item type="id" name="video_subtitles_chooser">false</item>
+    <item type="id" name="video_button_ad_skip">false</item>
+    <item type="id" name="video_controls_container">false</item>
+    <item type="id" name="video_button_ad_url">false</item>
+    <item type="id" name="prev">false</item>
+    <item type="id" name="rew">false</item>
+    <item type="id" name="pause">false</item>
+    <item type="id" name="ffwd">false</item>
+    <item type="id" name="next">false</item>
+    <item type="id" name="time_current">false</item>
+    <item type="id" name="mediacontroller_progress">false</item>
+    <item type="id" name="time">false</item>
+    <item type="id" name="news_title">false</item>
+    <item type="id" name="news_version_label">false</item>
+    <item type="id" name="news_version">false</item>
+    <item type="id" name="news_in_version">false</item>
+    <item type="id" name="dialog_settings_button">false</item>
+    <item type="id" name="action_container">false</item>
+    <item type="id" name="action_image">false</item>
+    <item type="id" name="action_text">false</item>
+    <item type="id" name="action0">false</item>
+    <item type="id" name="cancel_action">false</item>
+    <item type="id" name="status_bar_latest_event_content">false</item>
+    <item type="id" name="media_actions">false</item>
+    <item type="id" name="action_divider">false</item>
+    <item type="id" name="notification_main_column_container">false</item>
+    <item type="id" name="notification_main_column">false</item>
+    <item type="id" name="right_side">false</item>
+    <item type="id" name="chronometer">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="right_icon">false</item>
+    <item type="id" name="notification_background">false</item>
+    <item type="id" name="actions">false</item>
+    <item type="id" name="icon_group">false</item>
+    <item type="id" name="line1">false</item>
+    <item type="id" name="text2">false</item>
+    <item type="id" name="line3">false</item>
+    <item type="id" name="end_padder">false</item>
+    <item type="id" name="login_content">false</item>
+    <item type="id" name="login_webview">false</item>
+    <item type="id" name="os_bgimage_notif_bgimage_align_layout">false</item>
+    <item type="id" name="os_bgimage_notif_bgimage">false</item>
+    <item type="id" name="os_bgimage_notif_bgimage_right_aligned">false</item>
+    <item type="id" name="os_bgimage_notif_title">false</item>
+    <item type="id" name="os_bgimage_notif_body">false</item>
+    <item type="id" name="movieInfoLayout">false</item>
+    <item type="id" name="movie_poster_container">false</item>
+    <item type="id" name="movie_trailer">false</item>
+    <item type="id" name="movie_genre">false</item>
+    <item type="id" name="movie_type">false</item>
+    <item type="id" name="movie_origin_year_length">false</item>
+    <item type="id" name="movie_chart">false</item>
+    <item type="id" name="movie_plot_container">false</item>
+    <item type="id" name="movie_plot">false</item>
+    <item type="id" name="movie_plot_arrow">false</item>
+    <item type="id" name="movie_plot_more">false</item>
+    <item type="id" name="movie_plot_separator">false</item>
+    <item type="id" name="episodes_container">false</item>
+    <item type="id" name="button_prev_episode">false</item>
+    <item type="id" name="button_next_episode">false</item>
+    <item type="id" name="button_share">false</item>
+    <item type="id" name="button_watchlist">false</item>
+    <item type="id" name="movie_link_web">false</item>
+    <item type="id" name="movie_episodes_btn">false</item>
+    <item type="id" name="movie_cinemas_btn">false</item>
+    <item type="id" name="movie_tv_btn">false</item>
+    <item type="id" name="editText1">false</item>
+    <item type="id" name="button1">false</item>
+    <item type="id" name="progress_item_progress">false</item>
+    <item type="id" name="progress_item_error">false</item>
+    <item type="id" name="progress_item_error_text">false</item>
+    <item type="id" name="progress_item_error_button">false</item>
+    <item type="id" name="sdl_datepicker">false</item>
+    <item type="id" name="sdl_title">false</item>
+    <item type="id" name="sdl_message_scrollview">false</item>
+    <item type="id" name="sdl_message">false</item>
+    <item type="id" name="sdl_custom">false</item>
+    <item type="id" name="sdl_list">false</item>
+    <item type="id" name="sdl_button_divider">false</item>
+    <item type="id" name="sdl_buttons_default">false</item>
+    <item type="id" name="sdl_button_neutral">false</item>
+    <item type="id" name="sdl_button_negative">false</item>
+    <item type="id" name="sdl_button_positive">false</item>
+    <item type="id" name="sdl_buttons_stacked">false</item>
+    <item type="id" name="sdl_button_positive_stacked">false</item>
+    <item type="id" name="sdl_button_negative_stacked">false</item>
+    <item type="id" name="sdl_button_neutral_stacked">false</item>
+    <item type="id" name="sdl_buttons_bottom_space">false</item>
+    <item type="id" name="sdl_text">false</item>
+    <item type="id" name="sdl_progress">false</item>
+    <item type="id" name="seekBarPrefUnitsRight">false</item>
+    <item type="id" name="seekBarPrefValue">false</item>
+    <item type="id" name="seekBarPrefUnitsLeft">false</item>
+    <item type="id" name="seekBarPrefBarContainer">false</item>
+    <item type="id" name="side_navigation_item_icon">false</item>
+    <item type="id" name="side_navigation_item_title">false</item>
+    <item type="id" name="side_navigation_item_count">false</item>
+    <item type="id" name="creator_item_name_year">false</item>
+    <item type="id" name="creator_item_year">false</item>
+    <item type="id" name="creator_item_additional">false</item>
+    <item type="id" name="trivia_item_text">false</item>
+    <item type="id" name="spinner">false</item>
+    <item type="id" name="frame">false</item>
+    <item type="id" name="close">false</item>
+    <item type="id" name="loading_progress_panel">false</item>
+    <item type="id" name="loading_progress_text">false</item>
+    <item type="id" name="loading_error_panel">false</item>
+    <item type="id" name="loading_error_text">false</item>
+    <item type="id" name="loading_button_try_again">false</item>
+    <item type="id" name="preferences_movie_text_size">false</item>
+    <item type="id" name="preferences_notifications">false</item>
+    <item type="id" name="preferences_movie_posters">false</item>
+    <item type="id" name="preferences_home_sort">false</item>
+    <item type="id" name="preferences_movie_subtitles_size">false</item>
+    <item type="id" name="preferences_tv_stations">false</item>
+    <item type="id" name="preferences_charts_sort">false</item>
+    <item type="id" name="menu_item_share">false</item>
+    <item type="id" name="menu_delete">false</item>
+    <item type="id" name="menu_item_comment">false</item>
+    <item type="id" name="menu_item_watchlist">false</item>
+</resources>

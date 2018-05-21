@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="vertical" android:background="@color/actionbar_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/filter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/filter_cancel" android:background="@drawable/xml_bg_filter_cancel" android:layout_width="UNKNOWN_DATA_0x2c01" android:layout_height="UNKNOWN_DATA_0x2c01" android:src="@drawable/ic_action_cancel" android:layout_alignParentRight="true" />
+                <HorizontalScrollView android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/filter_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textSize="18sp" android:textColor="@color/text_color_primary" android:id="@id/movie" android:paddingLeft="10dp" android:paddingTop="@dimen/margin_vertical_small" android:paddingRight="@dimen/margin_horizontal" android:paddingBottom="@dimen/margin_vertical_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+        <cz.csfd.csfdroid.widget.slidingtabs.SlidingTabLayout android:id="@id/tabs" style="@style/SlidingTabLayout.Fixed" />
+        <android.support.v4.view.ViewPager android:id="@id/cinemas_pager" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/ad_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <cz.csfd.csfdroid.module.ads.AdBottomView android:id="@id/ad_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

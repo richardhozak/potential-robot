@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="0x1020000">
+        <shape>
+            <corners android:radius="2dp" />
+            <solid android:color="@color/separator_background" />
+        </shape>
+    </item>
+    <item android:id="0x102000f">
+        <clip>
+            <shape>
+                <corners android:radius="2dp" />
+                <solid android:color="@color/text_color_primary" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="0x102000d">
+        <clip>
+            <shape>
+                <corners android:radius="2dp" />
+                <solid android:color="@color/light_red" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/separator_background" android:paddingLeft="@dimen/margin_horizontal" android:paddingTop="@dimen/margin_vertical" android:paddingRight="@dimen/margin_horizontal" android:paddingBottom="@dimen/margin_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary" android:id="@id/cinema_name" android:paddingLeft="0dp" android:layout_alignParentLeft="true" style="@style/MovieInfo.Name" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary_transparent" android:id="@id/cinema_address" android:layout_below="@id/cinema_name" style="@style/MovieInfo.Text" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary_transparent" android:id="@id/cinema_phone" android:visibility="gone" android:layout_marginTop="@dimen/margin_vertical" android:layout_below="@id/cinema_address" style="@style/MovieInfo.Text" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary_transparent" android:id="@id/cinema_email" android:visibility="gone" android:layout_marginTop="@dimen/margin_vertical" android:layout_below="@id/cinema_phone" style="@style/MovieInfo.Text" />
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textColor="@color/text_color_primary_transparent" android:id="@id/cinema_web" android:visibility="gone" android:layout_marginTop="@dimen/margin_vertical" android:layout_below="@id/cinema_email" style="@style/MovieInfo.Text" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="0dp" android:weightSum="2.0" android:layout_below="@id/cinema_web">
+        <Button android:id="@id/button_favorite" android:text="@string/menu_add_to_favorites" android:layout_weight="1.0" style="@style/CinemaDetail.Button.Favorites" />
+        <Button android:id="@id/button_map" android:text="@string/show_on_map" android:layout_weight="1.0" style="@style/CinemaDetail.Button.Map" />
+    </LinearLayout>
+</RelativeLayout>

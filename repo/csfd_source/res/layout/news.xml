@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@id/news_title" android:text="@string/news_title" style="@style/News.Title" />
+    <TextView android:id="@id/news_version_label" android:layout_marginRight="5dp" android:text="@string/news_version_label" android:layout_toLeftOf="@id/news_version" android:layout_alignBaseline="@id/news_title" style="@style/News.Version" />
+    <TextView android:id="@id/news_version" android:layout_alignBaseline="@id/news_title" android:layout_alignParentRight="true" style="@style/News.Version" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/news_title">
+        <TextView android:id="@id/news_in_version" android:text="@string/news_in_version" style="@style/News.Text" />
+    </ScrollView>
+</RelativeLayout>

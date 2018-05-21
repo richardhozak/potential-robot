@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.SimpleCreatorItemView xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@id/creator_item_name_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/creator_item_photo">
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/creator_item_name" android:layout_toRightOf="@id/creator_item_photo" style="@style/CreatorItem.Name" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/creator_item_year" android:layout_toRightOf="@id/creator_item_name" android:layout_alignBaseline="@id/creator_item_name" style="@style/CreatorItem.Year" />
+    </LinearLayout>
+    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/creator_item_additional" android:layout_below="@id/creator_item_name_year" android:layout_alignLeft="@id/creator_item_name_year" style="@style/CreatorItem.Additional" />
+</cz.csfd.csfdroid.list.itemview.SimpleCreatorItemView>

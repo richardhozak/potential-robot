@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@id/creator_head" android:background="@color/movie_color_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View style="@style/HeaderShadow" />
+        <HorizontalScrollView android:id="@id/creator_name_scroll" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60dp" android:layout_alignParentLeft="true">
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/creator_name" style="@style/CreatorInfo.Name" />
+        </HorizontalScrollView>
+        <cz.csfd.csfdroid.widget.slidingtabs.SlidingTabLayout android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/creator_name_scroll" style="@style/MovieInfo.SlidingTabLayout" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/creator_detail_view_pager" android:nextFocusUp="@id/tabs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ad_bottom_bg" android:layout_below="@id/creator_head" />
+    <FrameLayout android:id="@id/ad_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <cz.csfd.csfdroid.module.ads.AdBottomView android:id="@id/ad_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

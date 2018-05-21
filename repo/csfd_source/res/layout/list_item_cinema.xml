@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.CinemaItemView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/itemViewPreferredHeight" style="@style/Csfd.Widget.ListView.Item">
+    <ImageView android:id="@id/cinema_item_poster" android:layout_alignParentLeft="true" style="@style/CreatorItem.Photo" />
+    <ImageView android:id="@id/cinema_item_shadow" android:layout_width="UNKNOWN_DATA_0x7f080069" android:layout_height="UNKNOWN_DATA_0x7f08001f" android:src="@drawable/item_image_shadow" android:layout_toRightOf="@id/cinema_item_poster" />
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/cinema_item_shadow">
+        <LinearLayout android:orientation="horizontal" android:id="@id/cinema_item_bearing_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <cz.csfd.csfdroid.widget.Compass android:id="@id/cinema_item_bearing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_vertical_small" android:layout_marginRight="@dimen/margin_vertical_small" />
+            <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/cinema_item_distance" style="@style/CinemaItem.Distance" />
+        </LinearLayout>
+        <ImageView android:id="@id/cinema_item_favourite" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:layout_marginLeft="@dimen/margin_horizontal_small" android:src="@drawable/favourite_star_active" android:layout_below="@id/cinema_item_bearing_distance" android:layout_alignParentRight="true" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/cinema_item_name" android:layout_toLeftOf="@id/cinema_item_bearing_distance" android:layout_alignParentLeft="true" style="@style/CinemaItem.Name" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/cinema_item_address" android:layout_below="@id/cinema_item_name" style="@style/CinemaItem.Address" />
+        <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/cinema_item_schedule" android:layout_below="@id/cinema_item_address" style="@style/CinemaItem.Schedule" />
+    </RelativeLayout>
+</cz.csfd.csfdroid.list.itemview.CinemaItemView>

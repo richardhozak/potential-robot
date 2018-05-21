@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <FrameLayout android:background="@drawable/new_video_shadow" android:paddingLeft="@dimen/padding_shadow" android:paddingTop="@dimen/padding_shadow" android:paddingRight="@dimen/padding_shadow" android:paddingBottom="@dimen/padding_shadow" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/xml_bg_trailer_selector">
+            <RelativeLayout android:id="@id/video_thumbnail_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/video_thumbnail" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0800d7" android:layout_centerHorizontal="true" />
+                <View android:background="@drawable/xml_new_video_bottom_shade" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_alignParentBottom="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_overlay" android:scaleType="centerInside" android:layout_alignLeft="@id/video_thumbnail" android:layout_alignTop="@id/video_thumbnail" android:layout_alignRight="@id/video_thumbnail" android:layout_alignBottom="@id/video_thumbnail" />
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textSize="16sp" android:textColor="@color/new_video_description" android:ellipsize="end" android:id="@id/video_name" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

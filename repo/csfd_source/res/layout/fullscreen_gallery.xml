@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/RelativeLayout01" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@id/gallery_fullscreen_gallery" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/gallery_fullscreen_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/FullscreenGallery.Progress.Wrap">
+        <ProgressBar android:id="@id/gallery_fullscreen_progress_bar" style="@style/FullscreenGallery.Progress.ProgressBar" />
+        <TextView android:text="@string/movieinfo_fetching_gallery" style="@style/FullscreenGallery.Progress.Text" />
+    </LinearLayout>
+    <TextView android:textColor="@color/text_color_primary" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/copyright" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/text_color_inverse" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

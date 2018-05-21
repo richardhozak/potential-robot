@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cz.csfd.csfdroid.list.itemview.VideoItemView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Csfd.Widget.ListView.Item.Padding">
+    <FrameLayout android:id="@id/video_item_thumbnail_container" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/xml_bg_dark_selector">
+        <ImageView android:id="@id/video_item_thumbnail" style="@style/VideoItem.Picture" />
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_overlay" android:scaleType="centerInside" />
+        <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@drawable/xml_new_video_bottom_shade" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001" />
+        <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/video_item_movie" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/movie_item_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_horizontal" android:paddingTop="@dimen/margin_vertical_small" android:paddingRight="@dimen/margin_horizontal" android:paddingBottom="@dimen/margin_vertical_small" android:layout_width="match_parent" android:layout_height="wrap_content"
+                <LinearLayout android:orientation="horizontal" android:id="@id/movie_item_name_year" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textSize="@dimen/list_item_title" android:textStyle="bold" android:textColor="@color/text_color_primary" android:ellipsize="end" android:id="@id/movie_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingMultiplier="0.9" />
+                    <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:id="@id/movie_item_year" android:layout_marginLeft="5dp" style="@style/MovieItem.Year" />
+                </LinearLayout>
+                <cz.csfd.csfdroid.widget.ConfigurableSizeTextView android:textSize="14sp" android:textColor="@color/new_video_description" android:id="@id/video_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingMultiplier="0.9" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</cz.csfd.csfdroid.list.itemview.VideoItemView>
